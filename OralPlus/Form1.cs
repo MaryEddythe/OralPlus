@@ -109,5 +109,14 @@ namespace OralPlus
         {
             btn_Settings.BackColor = Color.FromArgb(24, 30, 54);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            checkin f2 = new checkin();
+            f2.ShowDialog();
+            f2 = null;
+            this.Show();
+        }
     }
 }

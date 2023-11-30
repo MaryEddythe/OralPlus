@@ -64,6 +64,12 @@
     <Compile Include="Branch.Designer.cs">
       <DependentUpon>Branch.cs</DependentUpon>
     </Compile>
+    <Compile Include="checkin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="checkin.Designer.cs">
+      <DependentUpon>checkin.cs</DependentUpon>
+    </Compile>
     <Compile Include="CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Branch.resx">
       <DependentUpon>Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkin.resx">
+      <DependentUpon>checkin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
