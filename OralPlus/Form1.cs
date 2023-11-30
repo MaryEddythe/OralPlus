@@ -15,21 +15,9 @@ namespace OralPlus
     public partial class Form1 : Form
     {
 
-        //[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-       // private static extern IntPtr CreateRoundRectRgn
-         //(
-           //  int nLeftRect,
-            // int nTopRect,
-            // int nRightRect,
-            // int nBottomRect,
-            // int nWidthEllipse,
-            // int nHeightEllipse
-        // );
-
         public Form1()
         {
             InitializeComponent();
-           // Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnl_nav.Height = btn_Dashboard.Height;
             pnl_nav.Top = btn_Dashboard.Top;
             pnl_nav.Left = btn_Dashboard.Left;
@@ -62,7 +50,6 @@ namespace OralPlus
 
             Home uc = new Home();
             addUserControl(uc);
-
 
         }
 
@@ -112,11 +99,13 @@ namespace OralPlus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            checkin f2 = new checkin();
-            f2.ShowDialog();
-            f2 = null;
-            this.Show();
+            pnl_nav.Height = btn_Check.Height;
+            pnl_nav.Top = btn_Check.Top;
+            pnl_nav.Left = btn_Check.Left;
+            btn_Check.BackColor = Color.FromArgb(46, 51, 73);
+
+            checkin uc = new checkin();
+            addUserControl(uc);
         }
     }
 }
