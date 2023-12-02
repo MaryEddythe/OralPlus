@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ZXing;
 
 namespace OralPlus
 {
@@ -37,6 +38,7 @@ namespace OralPlus
                 captureDevice = new VideoCaptureDevice(selectedFilter.MonikerString);
                 captureDevice.NewFrame += CaptureDevice_NewFrame;
                 captureDevice.Start();
+                timer1.Start();
             }
             else
             {
@@ -45,9 +47,41 @@ namespace OralPlus
             }
         }
 
-        private void CaptureDevice_NewFrame(object sender, EventArgs e)
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            throw new NotImplementedException();
+            pictureBox1.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void check_Load_FormClosing(object sender, GiveFeedbackEventArgs e)
+        {
+            if (captureDevice.IsRunning)
+                captureDevice.Stop();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((System.Drawing.Bitmap)pictureBox1.Image);
+                if (result != null)
+                {
+                    txt_lname.Text = result.Text;
+                    txt_fname.Text = result.Text;
+                    txt_add.Text = result.Text;
+                    txt_email.Text = result.Text;
+                    txt_contact.Text = result.Text;
+                    radio_male.Checked = (result.Text == "Male");
+                    radio_female.Checked = (result.Text == "Female");
+                    radio_female.Checked = (result.Text == "Prefer not to say");
+                    date_dob.Value = DateTime.Parse(result.Text);
+
+                    timer1.Stop();
+
+                    if (captureDevice != null && captureDevice.IsRunning)
+                        captureDevice.Stop();
+                }
+            }
         }
     }
 }

@@ -29,6 +29,7 @@ namespace OralPlus
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@ namespace OralPlus
             this.btn_scan = new System.Windows.Forms.Button();
             this.btn_check = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -277,6 +279,10 @@ namespace OralPlus
             this.label8.TabIndex = 36;
             this.label8.Text = "Personal Information";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // check
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -308,6 +314,7 @@ namespace OralPlus
             this.Name = "check";
             this.Text = "check";
             this.Load += new System.EventHandler(this.check_Load);
+            this.GiveFeedback += new System.Windows.Forms.GiveFeedbackEventHandler(this.check_Load_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -337,5 +344,6 @@ namespace OralPlus
         private System.Windows.Forms.Button btn_scan;
         private System.Windows.Forms.Button btn_check;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Timer timer1;
     }
 }
