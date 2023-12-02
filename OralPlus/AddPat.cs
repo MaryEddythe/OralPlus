@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXing;
+using ZXing.Common;
+using ZXing.QrCode;
+using ZXing.QrCode.Internal;
 
 namespace OralPlus
 {
@@ -15,6 +19,34 @@ namespace OralPlus
         public AddPat()
         {
             InitializeComponent();
+        }
+
+        private void btn_code_Click(object sender, EventArgs e)
+        {
+            BarcodeWriter barcodeWriter = new BarcodeWriter();
+
+            EncodingOptions encodingOptions = new QrCodeEncodingOptions
+            {
+                Width = 300,
+                Height = 300,
+                Margin = 0
+            };
+            encodingOptions.Hints.Add(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+
+            barcodeWriter.Options = encodingOptions;
+            barcodeWriter.Format = BarcodeFormat.QR_CODE;
+
+            string patientInfo = $"{txt_lname.Text}, {txt_fname.Text}, {txt_contact.Text}, {radio_male.Checked}, {radio_female.Checked}, {radio_xx.Checked}, {txt_add.Text}, {txt_email.Text}, {date_dob.Value}, {circularPictureBox1.Image}";
+
+            Bitmap bitmap = barcodeWriter.Write(patientInfo);
+
+
+            QR.Image = bitmap;
+        }
+
+        private void btn_patient_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

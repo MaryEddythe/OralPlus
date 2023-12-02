@@ -83,5 +83,10 @@ namespace OralPlus
                 }
             }
         }
+
+        private void cboDevice_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

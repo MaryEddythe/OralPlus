@@ -48,14 +48,14 @@ namespace OralPlus
             this.date_dob = new System.Windows.Forms.DateTimePicker();
             this.circularPictureBox1 = new OralPlus.CircularPictureBox();
             this.btn_patient = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_code = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.QR = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QR)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -249,36 +249,28 @@ namespace OralPlus
             this.btn_patient.TabIndex = 29;
             this.btn_patient.Text = "+ Add Patient";
             this.btn_patient.UseVisualStyleBackColor = false;
+            this.btn_patient.Click += new System.EventHandler(this.btn_patient_Click);
             // 
-            // pictureBox1
+            // btn_code
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(698, 78);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 350);
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(698, 454);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(350, 38);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Generate code";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_code.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.btn_code.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_code.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_code.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_code.Location = new System.Drawing.Point(698, 475);
+            this.btn_code.Name = "btn_code";
+            this.btn_code.Size = new System.Drawing.Size(350, 38);
+            this.btn_code.TabIndex = 31;
+            this.btn_code.Text = "Generate code";
+            this.btn_code.UseVisualStyleBackColor = false;
+            this.btn_code.Click += new System.EventHandler(this.btn_code_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(820, 513);
+            this.label8.Location = new System.Drawing.Point(820, 534);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 26);
             this.label8.TabIndex = 32;
@@ -290,7 +282,7 @@ namespace OralPlus
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(698, 559);
+            this.button2.Location = new System.Drawing.Point(698, 580);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 39);
             this.button2.TabIndex = 33;
@@ -303,7 +295,7 @@ namespace OralPlus
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(827, 559);
+            this.button3.Location = new System.Drawing.Point(827, 580);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 39);
             this.button3.TabIndex = 34;
@@ -316,12 +308,21 @@ namespace OralPlus
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(961, 559);
+            this.button4.Location = new System.Drawing.Point(961, 580);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 39);
             this.button4.TabIndex = 35;
             this.button4.Text = "PDF";
             this.button4.UseVisualStyleBackColor = false;
+            // 
+            // QR
+            // 
+            this.QR.Location = new System.Drawing.Point(698, 98);
+            this.QR.Name = "QR";
+            this.QR.Size = new System.Drawing.Size(350, 350);
+            this.QR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.QR.TabIndex = 36;
+            this.QR.TabStop = false;
             // 
             // AddPat
             // 
@@ -329,12 +330,12 @@ namespace OralPlus
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1210, 793);
+            this.Controls.Add(this.QR);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_code);
             this.Controls.Add(this.btn_patient);
             this.Controls.Add(this.circularPictureBox1);
             this.Controls.Add(this.label7);
@@ -356,7 +357,7 @@ namespace OralPlus
             this.Name = "AddPat";
             this.Text = "AddPat";
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,11 +383,11 @@ namespace OralPlus
         private System.Windows.Forms.DateTimePicker date_dob;
         private CircularPictureBox circularPictureBox1;
         private System.Windows.Forms.Button btn_patient;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_code;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox QR;
     }
 }
