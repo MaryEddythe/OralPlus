@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,10 +37,13 @@ namespace OralPlus
             barcodeWriter.Options = encodingOptions;
             barcodeWriter.Format = BarcodeFormat.QR_CODE;
 
-            string patientInfo = $"{txt_lname.Text}, {txt_fname.Text}, {txt_contact.Text}, {radio_male.Checked}, {radio_female.Checked}, {radio_xx.Checked}, {txt_add.Text}, {txt_email.Text}, {date_dob.Value}, {circularPictureBox1.Image}";
+            string patientInfo = $"{txt_lname.Text}, {txt_fname.Text}, {txt_contact.Text}, " +
+                                 $"{(radio_male.Checked ? "Male" : "Female")}, " +
+                                 $"{(radio_xx.Checked ? "XX" : "Not XX")}, " +
+                                 $"{txt_add.Text}, {txt_email.Text}, " +
+                                 $"{date_dob.Value}";
 
             Bitmap bitmap = barcodeWriter.Write(patientInfo);
-
 
             QR.Image = bitmap;
         }
@@ -48,5 +52,69 @@ namespace OralPlus
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (QR.Image != null)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "PNG Image|*.png";
+                saveFileDialog.Title = "Save QR Code Image";
+                saveFileDialog.FileName = "Patient Card";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                       QR.Image.Save(saveFileDialog.FileName, ImageFormat.Png);
+                        MessageBox.Show("QR Code image downloaded successfully!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error downloading QR Code image: {ex.Message}");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please generate a QR code first.");
+            }
+        }
+
+        private void btn_jpg_Click(object sender, EventArgs e)
+        {
+            if (QR.Image != null)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "JPEG Image|*.jpg"; 
+                saveFileDialog.Title = "Save QR Code Image";
+                saveFileDialog.FileName = "Patient Card";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        QR.Image.Save(saveFileDialog.FileName, ImageFormat.Jpeg); 
+                        MessageBox.Show("QR Code image downloaded successfully!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error downloading QR Code image: {ex.Message}");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please generate a QR code first.");
+            }
+        }
+
+        private void AddPat_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
+  

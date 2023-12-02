@@ -50,9 +50,8 @@ namespace OralPlus
             this.btn_patient = new System.Windows.Forms.Button();
             this.btn_code = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_png = new System.Windows.Forms.Button();
+            this.btn_jpg = new System.Windows.Forms.Button();
             this.QR = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QR)).BeginInit();
@@ -276,51 +275,41 @@ namespace OralPlus
             this.label8.TabIndex = 32;
             this.label8.Text = "DOWNLOAD IN";
             // 
-            // button2
+            // btn_png
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(698, 580);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 39);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "PNG";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_png.BackColor = System.Drawing.Color.Transparent;
+            this.btn_png.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_png.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
+            this.btn_png.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_png.Location = new System.Drawing.Point(698, 580);
+            this.btn_png.Name = "btn_png";
+            this.btn_png.Size = new System.Drawing.Size(160, 39);
+            this.btn_png.TabIndex = 33;
+            this.btn_png.Text = "PNG";
+            this.btn_png.UseVisualStyleBackColor = false;
+            this.btn_png.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btn_jpg
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(827, 580);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 39);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "JPG";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(961, 580);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 39);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "PDF";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_jpg.BackColor = System.Drawing.Color.Transparent;
+            this.btn_jpg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_jpg.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
+            this.btn_jpg.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_jpg.Location = new System.Drawing.Point(887, 580);
+            this.btn_jpg.Name = "btn_jpg";
+            this.btn_jpg.Size = new System.Drawing.Size(161, 39);
+            this.btn_jpg.TabIndex = 34;
+            this.btn_jpg.Text = "JPG";
+            this.btn_jpg.UseVisualStyleBackColor = false;
+            this.btn_jpg.Click += new System.EventHandler(this.btn_jpg_Click);
             // 
             // QR
             // 
+            this.QR.BackColor = System.Drawing.Color.SeaShell;
             this.QR.Location = new System.Drawing.Point(698, 98);
             this.QR.Name = "QR";
             this.QR.Size = new System.Drawing.Size(350, 350);
-            this.QR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.QR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QR.TabIndex = 36;
             this.QR.TabStop = false;
             // 
@@ -331,9 +320,8 @@ namespace OralPlus
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1210, 793);
             this.Controls.Add(this.QR);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_jpg);
+            this.Controls.Add(this.btn_png);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_code);
             this.Controls.Add(this.btn_patient);
@@ -356,6 +344,7 @@ namespace OralPlus
             this.Controls.Add(this.txt_lname);
             this.Name = "AddPat";
             this.Text = "AddPat";
+            this.Load += new System.EventHandler(this.AddPat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QR)).EndInit();
             this.ResumeLayout(false);
@@ -385,9 +374,8 @@ namespace OralPlus
         private System.Windows.Forms.Button btn_patient;
         private System.Windows.Forms.Button btn_code;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_png;
+        private System.Windows.Forms.Button btn_jpg;
         private System.Windows.Forms.PictureBox QR;
     }
 }
