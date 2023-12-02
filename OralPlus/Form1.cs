@@ -43,13 +43,15 @@ namespace OralPlus
 
         private void btn_Dashboard_Click(object sender, EventArgs e)
         {
+
+            Home uc = new Home();
+            addUserControl(uc);
+
+
             pnl_nav.Height = btn_Dashboard.Height;
             pnl_nav.Top = btn_Dashboard.Top;
             pnl_nav.Left = btn_Dashboard.Left;
             btn_Dashboard.BackColor = Color.FromArgb(46, 51, 73);
-
-            Home uc = new Home();
-            addUserControl(uc);
 
         }
 
@@ -109,6 +111,21 @@ namespace OralPlus
             f2.ShowDialog();
             f2 = null;
             this.Show();
+        }
+
+        private void btn_message_Click(object sender, EventArgs e)
+        {
+
+            message uc = new message();
+            addUserControl(uc);
+
+            pnl_nav.Height = btn_message.Height;
+            pnl_nav.Top = btn_message.Top;
+            pnl_nav.Left = btn_message.Left;
+            btn_message.BackColor = Color.FromArgb(46, 51, 73);
+
+
+            
         }
     }
 }

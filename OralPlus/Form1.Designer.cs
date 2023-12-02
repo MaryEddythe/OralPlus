@@ -31,6 +31,7 @@ namespace OralPlus
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Check = new System.Windows.Forms.Button();
             this.pnl_nav = new System.Windows.Forms.Panel();
             this.btn_Settings = new System.Windows.Forms.Button();
             this.btn_Appointment = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@ namespace OralPlus
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.btn_Check = new System.Windows.Forms.Button();
+            this.btn_message = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,6 +50,7 @@ namespace OralPlus
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.btn_message);
             this.panel1.Controls.Add(this.btn_Check);
             this.panel1.Controls.Add(this.pnl_nav);
             this.panel1.Controls.Add(this.btn_Settings);
@@ -62,10 +64,27 @@ namespace OralPlus
             this.panel1.Size = new System.Drawing.Size(296, 840);
             this.panel1.TabIndex = 0;
             // 
+            // btn_Check
+            // 
+            this.btn_Check.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Check.FlatAppearance.BorderSize = 0;
+            this.btn_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Check.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Check.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_Check.Image = ((System.Drawing.Image)(resources.GetObject("btn_Check.Image")));
+            this.btn_Check.Location = new System.Drawing.Point(12, 420);
+            this.btn_Check.Name = "btn_Check";
+            this.btn_Check.Size = new System.Drawing.Size(284, 44);
+            this.btn_Check.TabIndex = 5;
+            this.btn_Check.Text = "Check in";
+            this.btn_Check.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Check.UseVisualStyleBackColor = false;
+            this.btn_Check.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pnl_nav
             // 
             this.pnl_nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(136)))), ((int)(((byte)(49)))));
-            this.pnl_nav.Location = new System.Drawing.Point(3, 385);
+            this.pnl_nav.Location = new System.Drawing.Point(3, 371);
             this.pnl_nav.Name = "pnl_nav";
             this.pnl_nav.Size = new System.Drawing.Size(3, 100);
             this.pnl_nav.TabIndex = 1;
@@ -78,7 +97,7 @@ namespace OralPlus
             this.btn_Settings.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Settings.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_Settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_Settings.Image")));
-            this.btn_Settings.Location = new System.Drawing.Point(12, 534);
+            this.btn_Settings.Location = new System.Drawing.Point(12, 570);
             this.btn_Settings.Name = "btn_Settings";
             this.btn_Settings.Size = new System.Drawing.Size(284, 44);
             this.btn_Settings.TabIndex = 4;
@@ -96,7 +115,7 @@ namespace OralPlus
             this.btn_Appointment.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Appointment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_Appointment.Image = ((System.Drawing.Image)(resources.GetObject("btn_Appointment.Image")));
-            this.btn_Appointment.Location = new System.Drawing.Point(12, 484);
+            this.btn_Appointment.Location = new System.Drawing.Point(12, 520);
             this.btn_Appointment.Name = "btn_Appointment";
             this.btn_Appointment.Size = new System.Drawing.Size(284, 44);
             this.btn_Appointment.TabIndex = 3;
@@ -114,7 +133,7 @@ namespace OralPlus
             this.btn_Patient.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Patient.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_Patient.Image = ((System.Drawing.Image)(resources.GetObject("btn_Patient.Image")));
-            this.btn_Patient.Location = new System.Drawing.Point(12, 385);
+            this.btn_Patient.Location = new System.Drawing.Point(12, 371);
             this.btn_Patient.Name = "btn_Patient";
             this.btn_Patient.Size = new System.Drawing.Size(284, 44);
             this.btn_Patient.TabIndex = 2;
@@ -132,7 +151,7 @@ namespace OralPlus
             this.btn_Dashboard.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Dashboard.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_Dashboard.Image = ((System.Drawing.Image)(resources.GetObject("btn_Dashboard.Image")));
-            this.btn_Dashboard.Location = new System.Drawing.Point(12, 335);
+            this.btn_Dashboard.Location = new System.Drawing.Point(12, 321);
             this.btn_Dashboard.Name = "btn_Dashboard";
             this.btn_Dashboard.Size = new System.Drawing.Size(284, 44);
             this.btn_Dashboard.TabIndex = 1;
@@ -183,22 +202,22 @@ namespace OralPlus
             this.panelContainer.Size = new System.Drawing.Size(1228, 840);
             this.panelContainer.TabIndex = 1;
             // 
-            // btn_Check
+            // btn_message
             // 
-            this.btn_Check.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Check.FlatAppearance.BorderSize = 0;
-            this.btn_Check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Check.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Check.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_Check.Image = ((System.Drawing.Image)(resources.GetObject("btn_Check.Image")));
-            this.btn_Check.Location = new System.Drawing.Point(12, 434);
-            this.btn_Check.Name = "btn_Check";
-            this.btn_Check.Size = new System.Drawing.Size(284, 44);
-            this.btn_Check.TabIndex = 5;
-            this.btn_Check.Text = "Check in";
-            this.btn_Check.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_Check.UseVisualStyleBackColor = false;
-            this.btn_Check.Click += new System.EventHandler(this.button1_Click);
+            this.btn_message.BackColor = System.Drawing.Color.Transparent;
+            this.btn_message.FlatAppearance.BorderSize = 0;
+            this.btn_message.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_message.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_message.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_message.Image = ((System.Drawing.Image)(resources.GetObject("btn_message.Image")));
+            this.btn_message.Location = new System.Drawing.Point(12, 470);
+            this.btn_message.Name = "btn_message";
+            this.btn_message.Size = new System.Drawing.Size(284, 44);
+            this.btn_message.TabIndex = 6;
+            this.btn_message.Text = "Message";
+            this.btn_message.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_message.UseVisualStyleBackColor = false;
+            this.btn_message.Click += new System.EventHandler(this.btn_message_Click);
             // 
             // Form1
             // 
@@ -233,6 +252,7 @@ namespace OralPlus
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Button btn_Check;
+        private System.Windows.Forms.Button btn_message;
     }
 }
 
