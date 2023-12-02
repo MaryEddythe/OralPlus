@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OralPlus
 {
-    public partial class checkin : UserControl
+    public partial class check : Form
     {
-        public checkin()
+        public check()
         {
             InitializeComponent();
         }

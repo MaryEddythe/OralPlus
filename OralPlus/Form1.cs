@@ -104,8 +104,11 @@ namespace OralPlus
             pnl_nav.Left = btn_Check.Left;
             btn_Check.BackColor = Color.FromArgb(46, 51, 73);
 
-            checkin uc = new checkin();
-            addUserControl(uc);
+            this.Hide();
+            check f2 = new check();
+            f2.ShowDialog();
+            f2 = null;
+            this.Show();
         }
     }
 }
