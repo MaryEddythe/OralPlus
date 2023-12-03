@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
+using System.Net.Mail;
 using System.Collections.Specialized;
 using System.IO;
 
@@ -15,6 +16,9 @@ namespace OralPlus
 {
     public partial class message : UserControl
     {
+		NetworkCredential login;
+		SmtpClient client;
+		MailMessage msg;
         public message()
         {
             InitializeComponent();
@@ -57,11 +61,12 @@ namespace OralPlus
 			using (StreamReader sr = new StreamReader(objResponse.GetResponseStream()))
 			{
 				result = sr.ReadToEnd();
-				// Close and clean up the StreamReader
 				sr.Close();
 			}
 			MessageBox.Show("Appointment reminder sent successfully!");
 		}
+
+        
 
     }
 }
