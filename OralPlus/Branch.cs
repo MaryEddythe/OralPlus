@@ -25,5 +25,14 @@ namespace OralPlus
             f2 = null;
             this.Show();
         }
+
+        private void btn_cebu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login2 f2 = new Login2 ();
+            f2.ShowDialog();
+            f2 = null;
+            this.Show();
+        }
     }
 }

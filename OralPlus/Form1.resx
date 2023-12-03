@@ -120,18 +120,18 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_message.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAI/SURBVEhLzZbNS1RRGMZHK3NVJpomlovChYQLrV0tDNPC
-        QBT/Blv0D4QoQom4MKhdLooEA23hpp1FgWSbiNypK80P3NSmRWWC4++5PF7SccTRc9EHfsy8zzn3fWfO
-        PV+pY6d0Ol0F5Q6TF8UK4RVswBrccVNyokgZfIZZqIEeWIFz7hJeJC8FFXy/VYjPk/AFhqNOoUXifPgE
-        H6DQdiTiq/AXWmyFE0mrQaqwtU343bAEZ22FEQnLQcpW+BR8gyFbYUTCPFiFdlsZoq0F1hyGE0mHYNxh
-        hmgbgCmH4UTSeliHK7Zi4V2C3xB+gkkkfgujDmPhvYYJh+FFci2df9BoS94JmIentpIRBR7BApyxJe8m
-        aPvMOvkOLZIXgJbOGOTZln8f/sAtW+FF8svwEx7aikTcB7/gmq3wInkT6H232opE/Ax+QKLFH4CGt8GW
-        PG02Kq5/HvvBRXIdjSpy3VYk4segH9VmS9490LGqifgc4gl6IJFgEPTOdxbvBBXRCLwDbTL9cBemYRGa
-        3T138bCG9wlkDC/xDdA6H4GLtuXrYOkF/bAXUOSm3MXDOh41vDsnXL6/Zoi2WvgKy9BkO3fxsCacZnsX
-        xOt8L9Hv/39fZjt38bCWmt75G9jXBKJfHegCWWnrYCKBNhntcN/htu1dRXsxzMFLW4cTibS9am/X0I/C
-        bkeqrsu6y03BadthREKdajpSdZ6PQwdUQgV8hBk47+7hRXJdJrRx6Bq1pUkocZfkRbELoNtr1qV2BEql
-        NgGm+Z+eKvuXzQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAj9JREFUSEvNls1LVFEYxkcrc1UmmiaWi8KFhAutXS0M08JAFP8GW/QPhChCibgw
+        qF0uigQDbeGmnUWBZJuI3KkrzQ/c1KZFZYLj77k8XtJxxNFz0Qd+zLzPOfd9Z849X6ljp3Q6XQXlDpMX
+        xQrhFWzAGtxxU3KiSBl8hlmogR5YgXPuEl4kLwUVfL9ViM+T8AWGo06hReJ8+AQfoNB2JOKr8BdabIUT
+        SatBqrC1TfjdsARnbYURCctBylb4FHyDIVthRMI8WIV2WxmirQXWHIYTSYdg3GGGaBuAKYfhRNJ6WIcr
+        tmLhXYLfEH6CSSR+C6MOY+G9hgmH4UVyLZ1/0GhL3gmYh6e2khEFHsECnLEl7yZo+8w6+Q4tkheAls4Y
+        5NmWfx/+wC1b4UXyy/ATHtqKRNwHv+CarfAieRPofbfaikT8DH5AosUfgIa3wZY8bTYqrn8e+8FFch2N
+        KnLdViTix6Af1WZL3j3QsaqJ+BziCXogkWAQ9M53Fu8EFdEIvANtMv1wF6ZhEZrdPXfxsIb3CWQML/EN
+        0DofgYu25etg6QX9sBdQ5KbcxcM6HjW8Oydcvr9miLZa+ArL0GQ7d/GwJpxmexfE63wv0e//f19mO3fx
+        sJaa3vkb2NcEol8d6AJZaetgIoE2Ge1w3+G27V1FezHMwUtbhxOJtL1qb9fQj8JuR6quy7rLTcFp22FE
+        Qp1qOlJ1no9DB1RCBXyEGTjv7uFFcl0mtHHoGrWlSShxl+RFsQug22vWpXYESqU2Aab5n54q+5fNAAAA
+        AElFTkSuQmCC
 </value>
   </data>
   <data name="btn_Check.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

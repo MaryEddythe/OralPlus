@@ -35,9 +35,9 @@ namespace OralPlus
             // 
             // btn_cebu
             // 
-            this.btn_cebu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(139)))), ((int)(((byte)(0)))));
+            this.btn_cebu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
             this.btn_cebu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cebu.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cebu.Font = new System.Drawing.Font("Poppins Medium", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cebu.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_cebu.Location = new System.Drawing.Point(679, 470);
             this.btn_cebu.Name = "btn_cebu";
@@ -45,12 +45,13 @@ namespace OralPlus
             this.btn_cebu.TabIndex = 10;
             this.btn_cebu.Text = "Cebu City ";
             this.btn_cebu.UseVisualStyleBackColor = false;
+            this.btn_cebu.Click += new System.EventHandler(this.btn_cebu_Click);
             // 
             // btn_ilo
             // 
-            this.btn_ilo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
+            this.btn_ilo.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_ilo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ilo.Font = new System.Drawing.Font("Poppins", 8F);
+            this.btn_ilo.Font = new System.Drawing.Font("Poppins Medium", 8F);
             this.btn_ilo.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_ilo.Location = new System.Drawing.Point(180, 470);
             this.btn_ilo.Name = "btn_ilo";

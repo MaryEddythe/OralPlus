@@ -11,6 +11,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Collections.Specialized;
 using System.IO;
+using System.Drawing.Drawing2D;
 
 namespace OralPlus
 {
@@ -35,8 +36,6 @@ namespace OralPlus
 			string message = txt_message.Text;
 
 			String url = "https://api.txtlocal.com/send/?apikey=" + apiKey + "&numbers=" + numbers + "&message=" + message + "&sender=" + sender;
-			//refer to parameters to complete correct url string
-
 			StreamWriter myWriter = null;
 			HttpWebRequest objRequest = (HttpWebRequest)WebRequest.Create(url);
 
@@ -66,7 +65,19 @@ namespace OralPlus
 			MessageBox.Show("Appointment reminder sent successfully!");
 		}
 
-        
+		private void panel2_Paint(object sender, PaintEventArgs e)
+		{
+			
+		}
 
+        private void txt_contact_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

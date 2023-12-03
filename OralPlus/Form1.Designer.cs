@@ -31,6 +31,7 @@ namespace OralPlus
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_message = new System.Windows.Forms.Button();
             this.btn_Check = new System.Windows.Forms.Button();
             this.pnl_nav = new System.Windows.Forms.Panel();
             this.btn_Settings = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace OralPlus
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.btn_message = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,6 +63,23 @@ namespace OralPlus
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 840);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_message
+            // 
+            this.btn_message.BackColor = System.Drawing.Color.Transparent;
+            this.btn_message.FlatAppearance.BorderSize = 0;
+            this.btn_message.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_message.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_message.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_message.Image = ((System.Drawing.Image)(resources.GetObject("btn_message.Image")));
+            this.btn_message.Location = new System.Drawing.Point(12, 470);
+            this.btn_message.Name = "btn_message";
+            this.btn_message.Size = new System.Drawing.Size(284, 44);
+            this.btn_message.TabIndex = 6;
+            this.btn_message.Text = "Message";
+            this.btn_message.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_message.UseVisualStyleBackColor = false;
+            this.btn_message.Click += new System.EventHandler(this.btn_message_Click);
             // 
             // btn_Check
             // 
@@ -86,7 +103,7 @@ namespace OralPlus
             this.pnl_nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(136)))), ((int)(((byte)(49)))));
             this.pnl_nav.Location = new System.Drawing.Point(3, 371);
             this.pnl_nav.Name = "pnl_nav";
-            this.pnl_nav.Size = new System.Drawing.Size(3, 100);
+            this.pnl_nav.Size = new System.Drawing.Size(3, 200);
             this.pnl_nav.TabIndex = 1;
             // 
             // btn_Settings
@@ -201,23 +218,6 @@ namespace OralPlus
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1228, 840);
             this.panelContainer.TabIndex = 1;
-            // 
-            // btn_message
-            // 
-            this.btn_message.BackColor = System.Drawing.Color.Transparent;
-            this.btn_message.FlatAppearance.BorderSize = 0;
-            this.btn_message.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_message.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_message.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_message.Image = ((System.Drawing.Image)(resources.GetObject("btn_message.Image")));
-            this.btn_message.Location = new System.Drawing.Point(12, 470);
-            this.btn_message.Name = "btn_message";
-            this.btn_message.Size = new System.Drawing.Size(284, 44);
-            this.btn_message.TabIndex = 6;
-            this.btn_message.Text = "Message";
-            this.btn_message.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_message.UseVisualStyleBackColor = false;
-            this.btn_message.Click += new System.EventHandler(this.btn_message_Click);
             // 
             // Form1
             // 
