@@ -10,13 +10,13 @@ namespace OralPlus
     {
         /// <summary>
         /// The main entry point for the application.
-        /// </summary>
+        /// </summary
         [STAThread]
         static void Main()
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Splash());
+            Application.Run(new Form1());
         }
     }
 }

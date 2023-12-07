@@ -37,8 +37,8 @@ namespace OralPlus
             this.btn_send = new System.Windows.Forms.Button();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,8 +47,8 @@ namespace OralPlus
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(230, 129);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(28, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 26);
             this.label2.TabIndex = 13;
@@ -56,11 +56,12 @@ namespace OralPlus
             // 
             // txt_contact
             // 
+            this.txt_contact.BackColor = System.Drawing.SystemColors.Window;
             this.txt_contact.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
-            this.txt_contact.Location = new System.Drawing.Point(296, 126);
+            this.txt_contact.Location = new System.Drawing.Point(33, 107);
             this.txt_contact.Multiline = true;
             this.txt_contact.Name = "txt_contact";
-            this.txt_contact.Size = new System.Drawing.Size(398, 36);
+            this.txt_contact.Size = new System.Drawing.Size(465, 39);
             this.txt_contact.TabIndex = 12;
             this.txt_contact.TextChanged += new System.EventHandler(this.txt_contact_TextChanged);
             // 
@@ -68,8 +69,8 @@ namespace OralPlus
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(230, 185);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(28, 164);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 26);
             this.label1.TabIndex = 14;
@@ -79,8 +80,8 @@ namespace OralPlus
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(205, 253);
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(28, 262);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 26);
             this.label4.TabIndex = 29;
@@ -88,11 +89,12 @@ namespace OralPlus
             // 
             // txt_message
             // 
+            this.txt_message.BackColor = System.Drawing.SystemColors.Window;
             this.txt_message.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
-            this.txt_message.Location = new System.Drawing.Point(296, 250);
+            this.txt_message.Location = new System.Drawing.Point(33, 291);
             this.txt_message.Multiline = true;
             this.txt_message.Name = "txt_message";
-            this.txt_message.Size = new System.Drawing.Size(398, 282);
+            this.txt_message.Size = new System.Drawing.Size(465, 327);
             this.txt_message.TabIndex = 30;
             // 
             // btn_send
@@ -101,9 +103,9 @@ namespace OralPlus
             this.btn_send.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_send.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_send.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_send.Location = new System.Drawing.Point(417, 560);
+            this.btn_send.Location = new System.Drawing.Point(324, 633);
             this.btn_send.Name = "btn_send";
-            this.btn_send.Size = new System.Drawing.Size(167, 38);
+            this.btn_send.Size = new System.Drawing.Size(174, 40);
             this.btn_send.TabIndex = 31;
             this.btn_send.Text = "Send";
             this.btn_send.UseVisualStyleBackColor = false;
@@ -111,39 +113,28 @@ namespace OralPlus
             // 
             // txt_name
             // 
+            this.txt_name.BackColor = System.Drawing.SystemColors.Window;
             this.txt_name.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
-            this.txt_name.Location = new System.Drawing.Point(296, 182);
+            this.txt_name.Location = new System.Drawing.Point(33, 193);
             this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(398, 36);
+            this.txt_name.Size = new System.Drawing.Size(465, 39);
             this.txt_name.TabIndex = 32;
             this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1225, 840);
             this.panel1.TabIndex = 34;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 20F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(320, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(345, 60);
-            this.label3.TabIndex = 35;
-            this.label3.Text = "SMS NOTIFICATION";
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(246)))));
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txt_message);
@@ -151,21 +142,34 @@ namespace OralPlus
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txt_name);
             this.panel2.Controls.Add(this.btn_send);
-            this.panel2.Location = new System.Drawing.Point(175, 94);
+            this.panel2.Location = new System.Drawing.Point(642, 67);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(909, 639);
+            this.panel2.Size = new System.Drawing.Size(533, 733);
             this.panel2.TabIndex = 36;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(49, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(345, 60);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "SMS NOTIFICATION";
             // 
             // message
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(39)))), ((int)(((byte)(79)))));
             this.Controls.Add(this.panel1);
             this.Name = "message";
             this.Size = new System.Drawing.Size(1228, 840);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
