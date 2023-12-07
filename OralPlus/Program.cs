@@ -14,9 +14,9 @@ namespace OralPlus
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Branch());
+            Application.Run(new Splash());
         }
     }
 }
