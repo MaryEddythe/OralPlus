@@ -55,8 +55,12 @@ namespace OralPlus
             this.QR = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_id = new System.Windows.Forms.TextBox();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -335,12 +339,32 @@ namespace OralPlus
             this.txt_id.Size = new System.Drawing.Size(411, 36);
             this.txt_id.TabIndex = 37;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(87, 3);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 39;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_exit);
+            this.panel2.Location = new System.Drawing.Point(1078, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(120, 33);
+            this.panel2.TabIndex = 39;
+            // 
             // AddPat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1210, 793);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txt_id);
             this.Controls.Add(this.QR);
@@ -366,11 +390,14 @@ namespace OralPlus
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_fname);
             this.Controls.Add(this.txt_lname);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddPat";
             this.Text = "AddPat";
             this.Load += new System.EventHandler(this.AddPat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,5 +430,7 @@ namespace OralPlus
         private System.Windows.Forms.PictureBox QR;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.PictureBox btn_exit;
+        private System.Windows.Forms.Panel panel2;
     }
 }
