@@ -122,6 +122,7 @@ namespace OralPlus
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(747, 249);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label2
             // 
@@ -373,6 +374,7 @@ namespace OralPlus
             this.btn_exit.Size = new System.Drawing.Size(30, 30);
             this.btn_exit.TabIndex = 39;
             this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // panel7
             // 
