@@ -38,11 +38,11 @@ namespace OralPlus
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -95,7 +95,7 @@ namespace OralPlus
             // 
             // btn_login
             // 
-            this.btn_login.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_login.Font = new System.Drawing.Font("Poppins Medium", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.Control;
@@ -142,6 +142,30 @@ namespace OralPlus
             this.panel1.Size = new System.Drawing.Size(645, 710);
             this.panel1.TabIndex = 13;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(186, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(295, 22);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Manage your patients using OralPlus+ system.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Poppins ExtraBold", 26F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(140, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(431, 78);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Welcome Admin!";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -176,30 +200,6 @@ namespace OralPlus
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Poppins ExtraBold", 26F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(140, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(431, 78);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Welcome Admin!";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 7F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(186, 108);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(295, 22);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Manage your patients using OralPlus+ system.";
             // 
             // Login
             // 
