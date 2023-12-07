@@ -37,11 +37,7 @@ namespace OralPlus
             barcodeWriter.Options = encodingOptions;
             barcodeWriter.Format = BarcodeFormat.QR_CODE;
 
-            string patientInfo = $"{txt_lname.Text}, {txt_fname.Text}, {txt_contact.Text}, " +
-                                 $"{(radio_male.Checked ? "Male" : "Female")}, " +
-                                 $"{(radio_xx.Checked ? "XX" : "Not XX")}, " +
-                                 $"{txt_add.Text}, {txt_email.Text}, " +
-                                 $"{date_dob.Value}";
+            string patientInfo = $"{txt_id.Text}, ";
 
             Bitmap bitmap = barcodeWriter.Write(patientInfo);
 

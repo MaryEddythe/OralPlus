@@ -105,11 +105,11 @@
     <Compile Include="CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>UserControl</SubType>
@@ -155,8 +155,8 @@
     <EmbeddedResource Include="check.resx">
       <DependentUpon>check.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
