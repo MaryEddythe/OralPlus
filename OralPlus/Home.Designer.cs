@@ -56,6 +56,8 @@ namespace OralPlus
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.circularPictureBox1 = new OralPlus.CircularPictureBox();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -66,6 +68,8 @@ namespace OralPlus
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -360,11 +364,30 @@ namespace OralPlus
             this.circularPictureBox1.TabIndex = 15;
             this.circularPictureBox1.TabStop = false;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(87, 3);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 39;
+            this.btn_exit.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btn_exit);
+            this.panel7.Location = new System.Drawing.Point(1093, 14);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(120, 33);
+            this.panel7.TabIndex = 39;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.circularPictureBox1);
@@ -396,6 +419,8 @@ namespace OralPlus
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,5 +454,7 @@ namespace OralPlus
         private CircularPictureBox circularPictureBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox btn_exit;
+        private System.Windows.Forms.Panel panel7;
     }
 }

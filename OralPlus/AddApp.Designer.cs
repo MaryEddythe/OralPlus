@@ -56,9 +56,11 @@ namespace OralPlus
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_lname
@@ -340,12 +342,24 @@ namespace OralPlus
             this.label11.TabIndex = 22;
             this.label11.Text = "Make appointment";
             // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(1168, 12);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 39;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // AddApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1210, 793);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_app);
@@ -369,12 +383,14 @@ namespace OralPlus
             this.Controls.Add(this.date_dob);
             this.Controls.Add(this.txt_fname);
             this.Controls.Add(this.txt_lname);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddApp";
             this.Text = "Male";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,5 +424,6 @@ namespace OralPlus
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox btn_exit;
     }
 }

@@ -214,6 +214,7 @@ namespace OralPlus
             // 
             // panelContainer
             // 
+            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.panelContainer.Location = new System.Drawing.Point(302, 0);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1228, 840);
