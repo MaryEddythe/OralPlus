@@ -24,6 +24,8 @@ namespace OralPlus
             f2.ShowDialog();
             f2 = null;
             this.Show();
+
+            //hello
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
