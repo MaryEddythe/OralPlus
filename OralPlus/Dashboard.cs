@@ -127,5 +127,10 @@ namespace OralPlus
 
             
         }
+
+        private void home1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
