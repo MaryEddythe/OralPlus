@@ -89,7 +89,7 @@ namespace OralPlus
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 7F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(80, 258);
+            this.label5.Location = new System.Drawing.Point(81, 370);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 22);
             this.label5.TabIndex = 10;
@@ -97,7 +97,7 @@ namespace OralPlus
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthCalendar1.Font = new System.Drawing.Font("Poppins", 9.2F);
             this.monthCalendar1.Location = new System.Drawing.Point(19, 12);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 9;
@@ -108,7 +108,7 @@ namespace OralPlus
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(80, 228);
+            this.label4.Location = new System.Drawing.Point(81, 340);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(179, 30);
             this.label4.TabIndex = 8;

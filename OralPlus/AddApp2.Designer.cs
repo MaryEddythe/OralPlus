@@ -225,7 +225,7 @@ namespace OralPlus
             // 
             // calendar
             // 
-            this.calendar.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar.Font = new System.Drawing.Font("Poppins", 9.2F);
             this.calendar.Location = new System.Drawing.Point(680, 157);
             this.calendar.Name = "calendar";
             this.calendar.TabIndex = 56;
