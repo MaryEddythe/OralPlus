@@ -12,6 +12,7 @@ using ZXing;
 using ZXing.Common;
 using ZXing.QrCode;
 using ZXing.QrCode.Internal;
+using MySql.Data.MySqlClient;
 
 namespace OralPlus
 {
@@ -24,6 +25,10 @@ namespace OralPlus
 
         private void btn_code_Click(object sender, EventArgs e)
         {
+            string connectionString = "server=localhost;user=root;password=;database=oralplus;";
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
             BarcodeWriter barcodeWriter = new BarcodeWriter();
 
             EncodingOptions encodingOptions = new QrCodeEncodingOptions
@@ -37,11 +42,50 @@ namespace OralPlus
             barcodeWriter.Options = encodingOptions;
             barcodeWriter.Format = BarcodeFormat.QR_CODE;
 
-            string patientInfo = $"{txt_id.Text}, ";
+            string patientInfo = $"{txt_id.Text}";
 
             Bitmap bitmap = barcodeWriter.Write(patientInfo);
 
             QR.Image = bitmap;
+
+            try
+            {
+                connection.Open();
+
+                string query = "INSERT INTO patient (patientId, patientFirstName, patientLastName, patientSex, patientDoB, patientAddress, patientEmail, patientContactNumber) " +
+                              "VALUES (@patientId, @patientFirstName, @patientLastName, @patientSex, @patientDoB, @patientAddress, @patientEmail, @patientContactNumber)";
+
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                cmd.Parameters.AddWithValue("@patientId", txt_id.Text);
+                cmd.Parameters.AddWithValue("@patientFirstName", txt_lname.Text);
+                cmd.Parameters.AddWithValue("@patientLastName", txt_fname.Text);
+
+                string sex = "";
+                if (radio_male.Checked)
+                    sex = "M";
+                else if (radio_female.Checked)
+                    sex = "F";
+                else if (radio_xx.Checked)
+                    sex = "O";
+                cmd.Parameters.AddWithValue("@patientSex", sex);
+
+                cmd.Parameters.AddWithValue("@patientDoB", date_dob.Value.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@patientAddress", txt_add.Text);
+                cmd.Parameters.AddWithValue("@patientEmail", txt_email.Text);
+                cmd.Parameters.AddWithValue("@patientContactNumber", txt_contact.Text);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Patient Added");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         private void btn_patient_Click(object sender, EventArgs e)
