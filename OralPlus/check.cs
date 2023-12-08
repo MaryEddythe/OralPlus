@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using MySql.Data.MySqlClient;
+
 
 namespace OralPlus
 {
@@ -66,17 +68,57 @@ namespace OralPlus
                 Result result = barcodeReader.Decode((System.Drawing.Bitmap)pictureBox1.Image);
                 if (result != null)
                 {
-                    txt_lname.Text = result.Text;
-                    txt_fname.Text = result.Text;
-                    txt_add.Text = result.Text;
-                    txt_email.Text = result.Text;
-                    txt_contact.Text = result.Text;
-                    radio_male.Checked = (result.Text == "Male");
-                    radio_female.Checked = (result.Text == "Female");
-                    radio_female.Checked = (result.Text == "Prefer not to say");
-                    date_dob.Value = DateTime.Parse(result.Text);
+                    string patientIdFromQR = result.Text;
+
+                    string connectionString = "server=localhost;user=root;password=;database=oralplus;";
+
+                    MySqlConnection connection = new MySqlConnection(connectionString);
 
                     timer1.Stop();
+
+                    try
+                    {
+                        connection.Open();
+
+                        string query = "SELECT * FROM patient WHERE patientId = @patientId";
+                        MySqlCommand cmd = new MySqlCommand(query, connection);
+                        cmd.Parameters.AddWithValue("@patientId", patientIdFromQR);
+
+                        MySqlDataReader reader = cmd.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            txt_id.Text = reader["patientId"].ToString();
+                            txt_lname.Text = reader["patientFirstName"].ToString();
+                            txt_fname.Text = reader["patientLastName"].ToString();
+
+                            string sex = reader["patientSex"].ToString();
+                            if (sex == "M")
+                                radio_male.Checked = true;
+                            else if (sex == "F")
+                                radio_female.Checked = true;
+                            else if (sex == "O")
+                                radio_xx.Checked = true;
+
+                            DateTime dob;
+                            if (DateTime.TryParse(reader["patientDoB"].ToString(), out dob))
+                                date_dob.Value = dob;
+
+                            txt_add.Text = reader["patientAddress"].ToString();
+                            txt_email.Text = reader["patientEmail"].ToString();
+                            txt_contact.Text = reader["patientContactNumber"].ToString();
+                        }
+
+                        reader.Close();
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
+                    finally
+                    {
+                        connection.Close();
+                    }
 
                     if (captureDevice != null && captureDevice.IsRunning)
                         captureDevice.Stop();
