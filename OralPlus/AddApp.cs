@@ -68,6 +68,7 @@ namespace OralPlus
             f2.ShowDialog();
             f2 = null;
             this.Show();
+            //sadadas//
         }
     }
 }
