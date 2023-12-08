@@ -57,6 +57,13 @@ namespace OralPlus
 
         private void btn_Patient_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Patients f2 = new Patients();
+            f2.ShowDialog();
+            f2 = null;
+            this.Show();
+
+
             pnl_nav.Height = btn_Patient.Height;
             pnl_nav.Top = btn_Patient.Top;
             pnl_nav.Left = btn_Patient.Left;
