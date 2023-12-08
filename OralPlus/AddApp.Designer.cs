@@ -56,6 +56,9 @@ namespace OralPlus
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.txt_id = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btn_verify = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -63,7 +66,7 @@ namespace OralPlus
             // 
             // txt_lname
             // 
-            this.txt_lname.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
+            this.txt_lname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txt_lname.Location = new System.Drawing.Point(403, 183);
             this.txt_lname.Multiline = true;
             this.txt_lname.Name = "txt_lname";
@@ -72,7 +75,7 @@ namespace OralPlus
             // 
             // txt_fname
             // 
-            this.txt_fname.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
+            this.txt_fname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txt_fname.Location = new System.Drawing.Point(620, 183);
             this.txt_fname.Multiline = true;
             this.txt_fname.Name = "txt_fname";
@@ -82,20 +85,20 @@ namespace OralPlus
             // 
             // date_dob
             // 
-            this.date_dob.Font = new System.Drawing.Font("Poppins SemiBold", 8F, System.Drawing.FontStyle.Bold);
+            this.date_dob.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.date_dob.Location = new System.Drawing.Point(403, 335);
             this.date_dob.Name = "date_dob";
-            this.date_dob.Size = new System.Drawing.Size(406, 27);
+            this.date_dob.Size = new System.Drawing.Size(406, 23);
             this.date_dob.TabIndex = 2;
             // 
             // radio_male
             // 
             this.radio_male.AutoSize = true;
-            this.radio_male.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_male.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radio_male.Location = new System.Drawing.Point(403, 262);
             this.radio_male.Name = "radio_male";
-            this.radio_male.Size = new System.Drawing.Size(66, 29);
+            this.radio_male.Size = new System.Drawing.Size(59, 21);
             this.radio_male.TabIndex = 3;
             this.radio_male.TabStop = true;
             this.radio_male.Text = "Male";
@@ -105,11 +108,11 @@ namespace OralPlus
             // radio_female
             // 
             this.radio_female.AutoSize = true;
-            this.radio_female.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_female.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radio_female.Location = new System.Drawing.Point(524, 262);
             this.radio_female.Name = "radio_female";
-            this.radio_female.Size = new System.Drawing.Size(84, 29);
+            this.radio_female.Size = new System.Drawing.Size(75, 21);
             this.radio_female.TabIndex = 4;
             this.radio_female.TabStop = true;
             this.radio_female.Text = "Female";
@@ -119,11 +122,11 @@ namespace OralPlus
             // radio_xx
             // 
             this.radio_xx.AutoSize = true;
-            this.radio_xx.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_xx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_xx.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radio_xx.Location = new System.Drawing.Point(644, 262);
             this.radio_xx.Name = "radio_xx";
-            this.radio_xx.Size = new System.Drawing.Size(147, 29);
+            this.radio_xx.Size = new System.Drawing.Size(134, 21);
             this.radio_xx.TabIndex = 5;
             this.radio_xx.TabStop = true;
             this.radio_xx.Text = "Prefer not to say";
@@ -133,50 +136,50 @@ namespace OralPlus
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(403, 239);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 26);
+            this.label1.Size = new System.Drawing.Size(33, 18);
             this.label1.TabIndex = 6;
             this.label1.Text = "Sex";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(403, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 26);
+            this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 7;
             this.label2.Text = "Last Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(615, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 26);
+            this.label3.Size = new System.Drawing.Size(81, 18);
             this.label3.TabIndex = 8;
             this.label3.Text = "First Name";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(403, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 26);
+            this.label4.Size = new System.Drawing.Size(90, 18);
             this.label4.TabIndex = 9;
             this.label4.Text = "Date of Birth";
             // 
             // txt_add
             // 
-            this.txt_add.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
+            this.txt_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txt_add.Location = new System.Drawing.Point(403, 405);
             this.txt_add.Multiline = true;
             this.txt_add.Name = "txt_add";
@@ -185,7 +188,7 @@ namespace OralPlus
             // 
             // txt_contact
             // 
-            this.txt_contact.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
+            this.txt_contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txt_contact.Location = new System.Drawing.Point(620, 484);
             this.txt_contact.Multiline = true;
             this.txt_contact.Name = "txt_contact";
@@ -194,7 +197,7 @@ namespace OralPlus
             // 
             // txt_email
             // 
-            this.txt_email.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
+            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txt_email.Location = new System.Drawing.Point(403, 484);
             this.txt_email.Multiline = true;
             this.txt_email.Name = "txt_email";
@@ -204,50 +207,50 @@ namespace OralPlus
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(615, 455);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 26);
+            this.label5.Size = new System.Drawing.Size(117, 18);
             this.label5.TabIndex = 14;
             this.label5.Text = "Contact Number";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(403, 455);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 26);
+            this.label6.Size = new System.Drawing.Size(45, 18);
             this.label6.TabIndex = 13;
             this.label6.Text = "Email";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(403, 376);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 26);
+            this.label7.Size = new System.Drawing.Size(62, 18);
             this.label7.TabIndex = 15;
             this.label7.Text = "Address";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(403, 549);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(208, 26);
+            this.label8.Size = new System.Drawing.Size(167, 18);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Reason for appointement";
+            this.label8.Text = "Reason for appointment";
             // 
             // txt_reason
             // 
-            this.txt_reason.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
+            this.txt_reason.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txt_reason.Location = new System.Drawing.Point(403, 587);
             this.txt_reason.Multiline = true;
             this.txt_reason.Name = "txt_reason";
@@ -256,7 +259,7 @@ namespace OralPlus
             // 
             // calendar
             // 
-            this.calendar.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calendar.Location = new System.Drawing.Point(859, 262);
             this.calendar.Name = "calendar";
             this.calendar.TabIndex = 18;
@@ -264,19 +267,19 @@ namespace OralPlus
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(854, 227);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(221, 26);
+            this.label9.Size = new System.Drawing.Size(176, 18);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Schedule for appointement";
+            this.label9.Text = "Schedule for appointment";
             // 
             // btn_app
             // 
             this.btn_app.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(143)))), ((int)(((byte)(213)))));
             this.btn_app.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_app.Font = new System.Drawing.Font("Poppins", 8F);
+            this.btn_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btn_app.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_app.Location = new System.Drawing.Point(859, 504);
             this.btn_app.Name = "btn_app";
@@ -284,6 +287,7 @@ namespace OralPlus
             this.btn_app.TabIndex = 20;
             this.btn_app.Text = "+ Make appointment";
             this.btn_app.UseVisualStyleBackColor = false;
+            this.btn_app.Click += new System.EventHandler(this.btn_app_Click);
             // 
             // panel2
             // 
@@ -298,11 +302,11 @@ namespace OralPlus
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(100, 166);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 36);
+            this.label10.Size = new System.Drawing.Size(95, 25);
             this.label10.TabIndex = 1;
             this.label10.Text = "OralPlus";
             // 
@@ -332,13 +336,42 @@ namespace OralPlus
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Poppins SemiBold", 20F, System.Drawing.FontStyle.Bold);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label11.Location = new System.Drawing.Point(319, 33);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(355, 60);
+            this.label11.Size = new System.Drawing.Size(312, 39);
             this.label11.TabIndex = 22;
             this.label11.Text = "Make appointment";
+            // 
+            // txt_id
+            // 
+            this.txt_id.Location = new System.Drawing.Point(403, 113);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(189, 22);
+            this.txt_id.TabIndex = 23;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(406, 87);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(71, 18);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Patient ID";
+            // 
+            // btn_verify
+            // 
+            this.btn_verify.BackColor = System.Drawing.Color.White;
+            this.btn_verify.Location = new System.Drawing.Point(618, 107);
+            this.btn_verify.Name = "btn_verify";
+            this.btn_verify.Size = new System.Drawing.Size(85, 33);
+            this.btn_verify.TabIndex = 25;
+            this.btn_verify.Text = "Verify";
+            this.btn_verify.UseVisualStyleBackColor = false;
+            this.btn_verify.Click += new System.EventHandler(this.btn_verify_Click);
             // 
             // AddApp
             // 
@@ -346,6 +379,9 @@ namespace OralPlus
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1210, 793);
+            this.Controls.Add(this.btn_verify);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txt_id);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_app);
@@ -408,5 +444,8 @@ namespace OralPlus
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btn_verify;
     }
 }
