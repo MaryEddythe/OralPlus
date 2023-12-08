@@ -84,11 +84,23 @@
     <Compile Include="AddApp.Designer.cs">
       <DependentUpon>AddApp.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAppointment.Designer.cs">
+      <DependentUpon>AddAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddPat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddPat.Designer.cs">
       <DependentUpon>AddPat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppointmentDate.Designer.cs">
+      <DependentUpon>AppointmentDate.cs</DependentUpon>
     </Compile>
     <Compile Include="Branch.cs">
       <SubType>Form</SubType>
@@ -152,8 +164,14 @@
     <EmbeddedResource Include="AddApp.resx">
       <DependentUpon>AddApp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddAppointment.resx">
+      <DependentUpon>AddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddPat.resx">
       <DependentUpon>AddPat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentDate.resx">
+      <DependentUpon>AppointmentDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Branch.resx">
       <DependentUpon>Branch.cs</DependentUpon>
