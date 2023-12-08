@@ -162,6 +162,31 @@ namespace OralPlus
             f2 = null;
             this.Show();
         }
+
+        private void txt_lname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_add_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
   
