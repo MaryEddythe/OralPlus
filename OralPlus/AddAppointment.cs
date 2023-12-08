@@ -31,5 +31,10 @@ namespace OralPlus
         {
 
         }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

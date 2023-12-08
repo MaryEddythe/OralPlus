@@ -436,6 +436,7 @@ namespace OralPlus
             this.btn_next.TabIndex = 55;
             this.btn_next.Text = "Next";
             this.btn_next.UseVisualStyleBackColor = false;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // AddAppointment
             // 
