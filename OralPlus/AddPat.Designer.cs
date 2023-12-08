@@ -143,7 +143,7 @@ namespace OralPlus
             // 
             this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_contact.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
-            this.txt_contact.Location = new System.Drawing.Point(144, 625);
+            this.txt_contact.Location = new System.Drawing.Point(149, 625);
             this.txt_contact.Multiline = true;
             this.txt_contact.Name = "txt_contact";
             this.txt_contact.Size = new System.Drawing.Size(411, 39);

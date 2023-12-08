@@ -144,5 +144,10 @@ namespace OralPlus
             f2 = null;
             this.Show();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
