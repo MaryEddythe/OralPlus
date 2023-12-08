@@ -404,7 +404,7 @@ namespace OralPlus
             this.txt_id.Location = new System.Drawing.Point(424, 173);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(214, 47);
+            this.txt_id.Size = new System.Drawing.Size(223, 47);
             this.txt_id.TabIndex = 81;
             // 
             // label8
