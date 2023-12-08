@@ -88,9 +88,9 @@ namespace OralPlus
                     else if (sex == "O")
                         radio_xx.Checked = true;
 
-                    //DateTime dob;
-                    //if (DateTime.TryParse(reader["patientDoB"].ToString(), out dob))
-                        //date_dob.Value = dob;
+                    DateTime dob;
+                    if (DateTime.TryParse(reader["patientDoB"].ToString(), out dob))
+                        date_dob.Value = dob;
 
                     txt_add.Text = reader["patientAddress"].ToString();
                     txt_email.Text = reader["patientEmail"].ToString();
@@ -151,7 +151,7 @@ namespace OralPlus
                     sex = "O";
                 cmd.Parameters.AddWithValue("@patientSex", sex);
 
-                //cmd.Parameters.AddWithValue("@patientDoB", date_dob.Value.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@patientDoB", date_dob.Value.ToString("yyyy-MM-dd"));
                 cmd.Parameters.AddWithValue("@patientAddress", txt_add.Text);
                 cmd.Parameters.AddWithValue("@patientEmail", txt_email.Text);
                 cmd.Parameters.AddWithValue("@patientContactNumber", txt_contact.Text);

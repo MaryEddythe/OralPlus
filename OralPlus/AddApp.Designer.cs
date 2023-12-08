@@ -67,6 +67,8 @@ namespace OralPlus
             this.label21 = new System.Windows.Forms.Label();
             this.calendar = new System.Windows.Forms.MonthCalendar();
             this.btn_makeapp = new System.Windows.Forms.Button();
+            this.date_dob = new System.Windows.Forms.DateTimePicker();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
@@ -358,7 +360,7 @@ namespace OralPlus
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(421, 324);
+            this.label6.Location = new System.Drawing.Point(665, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 18);
             this.label6.TabIndex = 68;
@@ -379,10 +381,10 @@ namespace OralPlus
             // 
             this.txt_fname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_fname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.txt_fname.Location = new System.Drawing.Point(426, 353);
+            this.txt_fname.Location = new System.Drawing.Point(668, 263);
             this.txt_fname.Multiline = true;
             this.txt_fname.Name = "txt_fname";
-            this.txt_fname.Size = new System.Drawing.Size(466, 47);
+            this.txt_fname.Size = new System.Drawing.Size(221, 47);
             this.txt_fname.TabIndex = 66;
             // 
             // txt_lname
@@ -392,7 +394,7 @@ namespace OralPlus
             this.txt_lname.Location = new System.Drawing.Point(426, 263);
             this.txt_lname.Multiline = true;
             this.txt_lname.Name = "txt_lname";
-            this.txt_lname.Size = new System.Drawing.Size(466, 47);
+            this.txt_lname.Size = new System.Drawing.Size(221, 47);
             this.txt_lname.TabIndex = 65;
             // 
             // txt_id
@@ -402,7 +404,7 @@ namespace OralPlus
             this.txt_id.Location = new System.Drawing.Point(424, 173);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(236, 47);
+            this.txt_id.Size = new System.Drawing.Size(214, 47);
             this.txt_id.TabIndex = 81;
             // 
             // label8
@@ -422,7 +424,7 @@ namespace OralPlus
             this.btn_verify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_verify.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.btn_verify.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_verify.Location = new System.Drawing.Point(678, 173);
+            this.btn_verify.Location = new System.Drawing.Point(668, 173);
             this.btn_verify.Name = "btn_verify";
             this.btn_verify.Size = new System.Drawing.Size(115, 47);
             this.btn_verify.TabIndex = 84;
@@ -468,7 +470,7 @@ namespace OralPlus
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label21.Location = new System.Drawing.Point(989, 151);
+            this.label21.Location = new System.Drawing.Point(1023, 154);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(176, 18);
             this.label21.TabIndex = 86;
@@ -477,7 +479,7 @@ namespace OralPlus
             // calendar
             // 
             this.calendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.2F);
-            this.calendar.Location = new System.Drawing.Point(959, 186);
+            this.calendar.Location = new System.Drawing.Point(993, 189);
             this.calendar.Name = "calendar";
             this.calendar.TabIndex = 85;
             // 
@@ -495,12 +497,33 @@ namespace OralPlus
             this.btn_makeapp.UseVisualStyleBackColor = false;
             this.btn_makeapp.Click += new System.EventHandler(this.btn_makeapp_Click);
             // 
+            // date_dob
+            // 
+            this.date_dob.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.date_dob.Location = new System.Drawing.Point(426, 373);
+            this.date_dob.Name = "date_dob";
+            this.date_dob.Size = new System.Drawing.Size(463, 23);
+            this.date_dob.TabIndex = 91;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label22.Location = new System.Drawing.Point(425, 342);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(90, 18);
+            this.label22.TabIndex = 92;
+            this.label22.Text = "Date of Birth";
+            // 
             // AddApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1408, 840);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.date_dob);
             this.Controls.Add(this.btn_makeapp);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
@@ -578,5 +601,7 @@ namespace OralPlus
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.MonthCalendar calendar;
         private System.Windows.Forms.Button btn_makeapp;
+        private System.Windows.Forms.DateTimePicker date_dob;
+        private System.Windows.Forms.Label label22;
     }
 }
