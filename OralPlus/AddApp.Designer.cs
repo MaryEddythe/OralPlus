@@ -52,7 +52,6 @@ namespace OralPlus
             this.label9 = new System.Windows.Forms.Label();
             this.btn_app = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -289,24 +288,12 @@ namespace OralPlus
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(296, 221);
             this.panel2.TabIndex = 1;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(100, 166);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 36);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "OralPlus";
             // 
             // pictureBox1
             // 
@@ -388,7 +375,6 @@ namespace OralPlus
             this.Text = "Male";
             this.Load += new System.EventHandler(this.AddApp_Load);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
@@ -421,7 +407,6 @@ namespace OralPlus
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_app;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;

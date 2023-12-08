@@ -129,6 +129,12 @@
     <Compile Include="Login2.Designer.cs">
       <DependentUpon>Login2.cs</DependentUpon>
     </Compile>
+    <Compile Include="makeappointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="makeappointment.Designer.cs">
+      <DependentUpon>makeappointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="message.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login2.resx">
       <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="makeappointment.resx">
+      <DependentUpon>makeappointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="message.resx">
       <DependentUpon>message.cs</DependentUpon>
