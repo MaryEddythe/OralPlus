@@ -34,7 +34,7 @@ namespace OralPlus
         private void btn_app_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddApp f2 = new AddApp();
+            AddAppointment f2 = new AddAppointment();
             f2.ShowDialog();
             f2 = null;
             this.Show();

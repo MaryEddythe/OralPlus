@@ -96,6 +96,12 @@
     <Compile Include="AddPat.Designer.cs">
       <DependentUpon>AddPat.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppointmentContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppointmentContact.Designer.cs">
+      <DependentUpon>AppointmentContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppointmentDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddPat.resx">
       <DependentUpon>AddPat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentContact.resx">
+      <DependentUpon>AppointmentContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppointmentDate.resx">
       <DependentUpon>AppointmentDate.cs</DependentUpon>

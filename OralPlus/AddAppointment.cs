@@ -16,6 +16,16 @@ namespace OralPlus
         public AddAppointment()
         {
             InitializeComponent();
+            AppointmentContact uc = new AppointmentContact();
+            addUserControl(uc);
+        }
+
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(userControl);
+
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -34,7 +44,8 @@ namespace OralPlus
 
         private void btn_next_Click(object sender, EventArgs e)
         {
-
+            AppointmentDate uc = new AppointmentDate();
+            addUserControl(uc);
         }
     }
 }
