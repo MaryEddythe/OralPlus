@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace OralPlus
 {
@@ -68,6 +69,11 @@ namespace OralPlus
             f2.ShowDialog();
             f2 = null;
             this.Show();
+        }
+
+        private void btn_verify_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
