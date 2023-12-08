@@ -45,5 +45,10 @@ namespace OralPlus
             f2 = null;
             this.Show();
         }
+
+        private void AddApp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
