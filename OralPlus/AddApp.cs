@@ -50,5 +50,24 @@ namespace OralPlus
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddApp2 f2 = new AddApp2();
+            f2.ShowDialog();
+            f2 = null;
+            this.Show();
+        }
     }
 }

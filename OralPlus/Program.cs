@@ -16,7 +16,7 @@ namespace OralPlus
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Branch());
+            Application.Run(new Form1());
         }
     }
 }

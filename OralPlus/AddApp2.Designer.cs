@@ -1,7 +1,7 @@
 ﻿
 namespace OralPlus
 {
-    partial class AddAppointment
+    partial class AddApp2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,8 @@ namespace OralPlus
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddAppointment));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddApp2));
+            this.btn_makeapp = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -43,43 +42,31 @@ namespace OralPlus
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.btn_next = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.calendar = new System.Windows.Forms.MonthCalendar();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_reason = new System.Windows.Forms.TextBox();
+            this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // btn_makeapp
             // 
-            this.panel1.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panelContainer);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1225, 840);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btn_next);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(399, 840);
-            this.panel2.TabIndex = 22;
+            this.btn_makeapp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.btn_makeapp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_makeapp.Font = new System.Drawing.Font("Poppins", 8F);
+            this.btn_makeapp.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_makeapp.Location = new System.Drawing.Point(971, 752);
+            this.btn_makeapp.Name = "btn_makeapp";
+            this.btn_makeapp.Size = new System.Drawing.Size(212, 38);
+            this.btn_makeapp.TabIndex = 55;
+            this.btn_makeapp.Text = "+ Make appointment";
+            this.btn_makeapp.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
@@ -205,48 +192,133 @@ namespace OralPlus
             this.label16.TabIndex = 51;
             this.label16.Text = "with us to get the best dental solution.";
             // 
-            // panelContainer
+            // panel2
             // 
-            this.panelContainer.Location = new System.Drawing.Point(399, -6);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(826, 843);
-            this.panelContainer.TabIndex = 51;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(411, 840);
+            this.panel2.TabIndex = 23;
             // 
-            // btn_next
+            // label9
             // 
-            this.btn_next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_next.Font = new System.Drawing.Font("Poppins", 8F);
-            this.btn_next.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_next.Location = new System.Drawing.Point(117, 621);
-            this.btn_next.Name = "btn_next";
-            this.btn_next.Size = new System.Drawing.Size(128, 38);
-            this.btn_next.TabIndex = 55;
-            this.btn_next.Text = "Next";
-            this.btn_next.UseVisualStyleBackColor = false;
-            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.label9.Location = new System.Drawing.Point(697, 122);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(221, 26);
+            this.label9.TabIndex = 57;
+            this.label9.Text = "Schedule for appointement";
             // 
-            // AddAppointment
+            // calendar
+            // 
+            this.calendar.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar.Location = new System.Drawing.Point(680, 157);
+            this.calendar.Name = "calendar";
+            this.calendar.TabIndex = 56;
+            this.calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calendar_DateChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.label8.Location = new System.Drawing.Point(734, 501);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(208, 26);
+            this.label8.TabIndex = 58;
+            this.label8.Text = "Reason for appointement";
+            // 
+            // txt_reason
+            // 
+            this.txt_reason.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_reason.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
+            this.txt_reason.Location = new System.Drawing.Point(520, 530);
+            this.txt_reason.Multiline = true;
+            this.txt_reason.Name = "txt_reason";
+            this.txt_reason.Size = new System.Drawing.Size(631, 192);
+            this.txt_reason.TabIndex = 59;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_exit.BackgroundImage")));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Location = new System.Drawing.Point(1183, 12);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_exit.TabIndex = 60;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Font = new System.Drawing.Font("Poppins", 8F);
+            this.btn_back.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_back.Location = new System.Drawing.Point(753, 752);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(212, 38);
+            this.btn_back.TabIndex = 61;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Poppins ExtraBold", 16F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.label5.Location = new System.Drawing.Point(632, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(378, 48);
+            this.label5.TabIndex = 62;
+            this.label5.Text = "appointment information";
+            // 
+            // AddApp2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1225, 840);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btn_back);
+            this.Controls.Add(this.btn_exit);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_reason);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.calendar);
+            this.Controls.Add(this.btn_makeapp);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddAppointment";
-            this.Text = "AddAppointment";
-            this.panel1.ResumeLayout(false);
+            this.Name = "AddApp2";
+            this.Text = "AddApp2";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_makeapp;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label11;
@@ -258,7 +330,13 @@ namespace OralPlus
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panelContainer;
-        private System.Windows.Forms.Button btn_next;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MonthCalendar calendar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_reason;
+        private System.Windows.Forms.PictureBox btn_exit;
+        private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Label label5;
     }
 }

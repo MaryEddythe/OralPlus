@@ -10,28 +10,23 @@ using System.Windows.Forms;
 
 namespace OralPlus
 {
-    public partial class Home : UserControl
+    public partial class AddApp2 : Form
     {
-        public Home()
+        public AddApp2()
         {
             InitializeComponent();
         }
 
-        private void Home_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_patient_Click(object sender, EventArgs e)
+        private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddPat f2 = new AddPat();
+            Form1 f2 = new Form1();
             f2.ShowDialog();
             f2 = null;
             this.Show();
         }
 
-        private void btn_app_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             AddApp f2 = new AddApp();
@@ -40,14 +35,9 @@ namespace OralPlus
             this.Show();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void calendar_DateChanged(object sender, DateRangeEventArgs e)
         {
 
-        }
-
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
