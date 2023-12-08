@@ -136,12 +136,6 @@
     <Compile Include="AddApp.Designer.cs">
       <DependentUpon>AddApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddApp2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddApp2.Designer.cs">
-      <DependentUpon>AddApp2.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddPat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,9 +203,6 @@
     </Compile>
     <EmbeddedResource Include="AddApp.resx">
       <DependentUpon>AddApp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddApp2.resx">
-      <DependentUpon>AddApp2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddPat.resx">
       <DependentUpon>AddPat.cs</DependentUpon>
