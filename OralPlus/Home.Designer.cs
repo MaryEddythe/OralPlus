@@ -39,15 +39,15 @@ namespace OralPlus
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label_patientsTodayCount = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label_patientCount = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label_appointmentCount = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -160,7 +160,7 @@ namespace OralPlus
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.label_patientsTodayCount);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(55, 176);
@@ -168,17 +168,17 @@ namespace OralPlus
             this.panel4.Size = new System.Drawing.Size(234, 140);
             this.panel4.TabIndex = 2;
             // 
-            // label9
+            // label_patientsTodayCount
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Location = new System.Drawing.Point(143, 62);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 58);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "8";
+            this.label_patientsTodayCount.AutoSize = true;
+            this.label_patientsTodayCount.BackColor = System.Drawing.Color.Transparent;
+            this.label_patientsTodayCount.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_patientsTodayCount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_patientsTodayCount.Location = new System.Drawing.Point(143, 62);
+            this.label_patientsTodayCount.Name = "label_patientsTodayCount";
+            this.label_patientsTodayCount.Size = new System.Drawing.Size(43, 58);
+            this.label_patientsTodayCount.TabIndex = 12;
+            this.label_patientsTodayCount.Text = "-";
             // 
             // pictureBox1
             // 
@@ -205,7 +205,7 @@ namespace OralPlus
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.label_patientCount);
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Location = new System.Drawing.Point(311, 176);
@@ -213,17 +213,17 @@ namespace OralPlus
             this.panel5.Size = new System.Drawing.Size(234, 140);
             this.panel5.TabIndex = 3;
             // 
-            // label10
+            // label_patientCount
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label10.Location = new System.Drawing.Point(135, 62);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 58);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "118";
+            this.label_patientCount.AutoSize = true;
+            this.label_patientCount.BackColor = System.Drawing.Color.Transparent;
+            this.label_patientCount.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_patientCount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_patientCount.Location = new System.Drawing.Point(135, 62);
+            this.label_patientCount.Name = "label_patientCount";
+            this.label_patientCount.Size = new System.Drawing.Size(43, 58);
+            this.label_patientCount.TabIndex = 13;
+            this.label_patientCount.Text = "-";
             // 
             // pictureBox2
             // 
@@ -250,7 +250,7 @@ namespace OralPlus
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label_appointmentCount);
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Location = new System.Drawing.Point(565, 176);
@@ -258,17 +258,17 @@ namespace OralPlus
             this.panel6.Size = new System.Drawing.Size(234, 140);
             this.panel6.TabIndex = 4;
             // 
-            // label11
+            // label_appointmentCount
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label11.Location = new System.Drawing.Point(136, 59);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 58);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "3";
+            this.label_appointmentCount.AutoSize = true;
+            this.label_appointmentCount.BackColor = System.Drawing.Color.Transparent;
+            this.label_appointmentCount.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_appointmentCount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label_appointmentCount.Location = new System.Drawing.Point(136, 59);
+            this.label_appointmentCount.Name = "label_appointmentCount";
+            this.label_appointmentCount.Size = new System.Drawing.Size(43, 58);
+            this.label_appointmentCount.TabIndex = 14;
+            this.label_appointmentCount.Text = "-";
             // 
             // pictureBox3
             // 
@@ -447,9 +447,9 @@ namespace OralPlus
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label_patientsTodayCount;
+        private System.Windows.Forms.Label label_patientCount;
+        private System.Windows.Forms.Label label_appointmentCount;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_app;
         private System.Windows.Forms.Button btn_patient;
