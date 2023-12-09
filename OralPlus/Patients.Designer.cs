@@ -327,7 +327,7 @@ namespace OralPlus
             this.Controls.Add(this.txt_lname);
             this.Controls.Add(this.patientViewForm);
             this.Name = "Patients";
-            this.Text = "Form2";
+            this.Text = "Patients";
             ((System.ComponentModel.ISupportInitialize)(this.patientViewForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
