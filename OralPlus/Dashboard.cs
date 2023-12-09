@@ -86,7 +86,7 @@ namespace OralPlus
 
         private void btn_Settings_Click(object sender, EventArgs e)
         {
-            Patient uc = new Patient();
+            PatientList uc = new PatientList ();
             addUserControl(uc);
 
             pnl_nav.Height = btn_Settings.Height;
