@@ -389,7 +389,7 @@ namespace OralPlus
             this.Controls.Add(this.txt_lname);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddPat";
-            this.Text = "AddPat";
+            this.Text = "Add Patient";
             this.Load += new System.EventHandler(this.AddPat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.QR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();

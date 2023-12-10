@@ -148,7 +148,7 @@ namespace OralPlus
                 connection.Open();
 
                 string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-                string query = "SELECT patientId, patientLastName, appointmentReason FROM appointment WHERE appointmentDate = @currentDate";
+                string query = "SELECT patientId, patientLastName, appointmentDate, appointmentReason FROM appointment WHERE appointmentDate = @currentDate";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@currentDate", currentDate);
 

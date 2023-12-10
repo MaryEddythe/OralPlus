@@ -561,7 +561,7 @@ namespace OralPlus
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AddApp";
-            this.Text = "Male";
+            this.Text = "Make Appointment";
             this.Load += new System.EventHandler(this.AddApp_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
