@@ -77,8 +77,8 @@ namespace OralPlus
                 if (reader.Read())
                 {
                     txt_id.Text = reader["patientId"].ToString();
-                    txt_lname.Text = reader["patientFirstName"].ToString();
-                    txt_fname.Text = reader["patientLastName"].ToString();
+                    txt_fname.Text = reader["patientFirstName"].ToString();
+                    txt_lname.Text = reader["patientLastName"].ToString();
 
                     string sex = reader["patientSex"].ToString();
                     if (sex == "M")
@@ -139,8 +139,8 @@ namespace OralPlus
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.Parameters.AddWithValue("@patientId", txt_id.Text);
-                cmd.Parameters.AddWithValue("@patientFirstName", txt_lname.Text);
-                cmd.Parameters.AddWithValue("@patientLastName", txt_fname.Text);
+                cmd.Parameters.AddWithValue("@patientFirstName", txt_fname.Text);
+                cmd.Parameters.AddWithValue("@patientLastName", txt_lname.Text);
 
                 string sex = "";
                 if (radio_male.Checked)

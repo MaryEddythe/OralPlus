@@ -50,6 +50,9 @@ namespace OralPlus
             this.btn_exit = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.appointmentsTodayViewForm = new System.Windows.Forms.DataGridView();
             this.circularPictureBox1 = new OralPlus.CircularPictureBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,15 +62,17 @@ namespace OralPlus
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.panel7.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentsTodayViewForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel4.Controls.Add(this.label_patientsTodayCount);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label_patientCount);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(55, 176);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(234, 140);
@@ -79,7 +84,7 @@ namespace OralPlus
             this.label_patientsTodayCount.BackColor = System.Drawing.Color.Transparent;
             this.label_patientsTodayCount.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_patientsTodayCount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_patientsTodayCount.Location = new System.Drawing.Point(143, 62);
+            this.label_patientsTodayCount.Location = new System.Drawing.Point(158, 64);
             this.label_patientsTodayCount.Name = "label_patientsTodayCount";
             this.label_patientsTodayCount.Size = new System.Drawing.Size(43, 58);
             this.label_patientsTodayCount.TabIndex = 12;
@@ -89,7 +94,7 @@ namespace OralPlus
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 101);
             this.pictureBox1.TabIndex = 6;
@@ -97,22 +102,23 @@ namespace OralPlus
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 7F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(123, 37);
+            this.label6.Location = new System.Drawing.Point(107, 21);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 22);
+            this.label6.Size = new System.Drawing.Size(141, 83);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Patients Today";
+            this.label6.Text = "Patients Served Today";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel5.Controls.Add(this.label_patientCount);
-            this.panel5.Controls.Add(this.pictureBox2);
-            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.label_appointmentCount);
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.label8);
             this.panel5.Location = new System.Drawing.Point(295, 176);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(234, 140);
@@ -124,7 +130,7 @@ namespace OralPlus
             this.label_patientCount.BackColor = System.Drawing.Color.Transparent;
             this.label_patientCount.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_patientCount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_patientCount.Location = new System.Drawing.Point(135, 62);
+            this.label_patientCount.Location = new System.Drawing.Point(153, 64);
             this.label_patientCount.Name = "label_patientCount";
             this.label_patientCount.Size = new System.Drawing.Size(43, 58);
             this.label_patientCount.TabIndex = 13;
@@ -134,7 +140,7 @@ namespace OralPlus
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 101);
             this.pictureBox2.TabIndex = 12;
@@ -146,7 +152,7 @@ namespace OralPlus
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Poppins SemiBold", 7F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(121, 37);
+            this.label7.Location = new System.Drawing.Point(135, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 22);
             this.label7.TabIndex = 12;
@@ -155,9 +161,9 @@ namespace OralPlus
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel6.Controls.Add(this.label_appointmentCount);
-            this.panel6.Controls.Add(this.pictureBox3);
-            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.pictureBox1);
+            this.panel6.Controls.Add(this.label_patientsTodayCount);
+            this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(535, 176);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(234, 140);
@@ -169,7 +175,7 @@ namespace OralPlus
             this.label_appointmentCount.BackColor = System.Drawing.Color.Transparent;
             this.label_appointmentCount.Font = new System.Drawing.Font("Poppins Light", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_appointmentCount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_appointmentCount.Location = new System.Drawing.Point(136, 59);
+            this.label_appointmentCount.Location = new System.Drawing.Point(153, 64);
             this.label_appointmentCount.Name = "label_appointmentCount";
             this.label_appointmentCount.Size = new System.Drawing.Size(43, 58);
             this.label_appointmentCount.TabIndex = 14;
@@ -178,7 +184,7 @@ namespace OralPlus
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(11, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 21);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 101);
             this.pictureBox3.TabIndex = 13;
@@ -186,15 +192,16 @@ namespace OralPlus
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 7F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(117, 37);
+            this.label8.Location = new System.Drawing.Point(114, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 22);
+            this.label8.Size = new System.Drawing.Size(117, 54);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Appointments";
+            this.label8.Text = "Total Appointments";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label1
             // 
@@ -286,6 +293,40 @@ namespace OralPlus
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 9;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.appointmentsTodayViewForm);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(55, 322);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(714, 320);
+            this.panel1.TabIndex = 40;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 7F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(18, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 22);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Upcoming Patients Today";
+            // 
+            // appointmentsTodayViewForm
+            // 
+            this.appointmentsTodayViewForm.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.appointmentsTodayViewForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.appointmentsTodayViewForm.Location = new System.Drawing.Point(22, 49);
+            this.appointmentsTodayViewForm.Name = "appointmentsTodayViewForm";
+            this.appointmentsTodayViewForm.RowHeadersWidth = 51;
+            this.appointmentsTodayViewForm.RowTemplate.Height = 24;
+            this.appointmentsTodayViewForm.Size = new System.Drawing.Size(674, 254);
+            this.appointmentsTodayViewForm.TabIndex = 15;
+            this.appointmentsTodayViewForm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.appointmentsTodayViewForm_CellContentClick);
+            // 
             // circularPictureBox1
             // 
             this.circularPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularPictureBox1.BackgroundImage")));
@@ -301,6 +342,7 @@ namespace OralPlus
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label13);
@@ -326,6 +368,9 @@ namespace OralPlus
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.panel7.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentsTodayViewForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -354,5 +399,8 @@ namespace OralPlus
         private System.Windows.Forms.PictureBox btn_exit;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView appointmentsTodayViewForm;
     }
 }

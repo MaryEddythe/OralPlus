@@ -23,6 +23,7 @@ namespace OralPlus
             UpdateAppointmentCountLabel();
             UpdatePatientCountLabel();
             UpdatePatientsTodayCountLabel();
+            UpdateTodaysAppointments();
         }
 
         private void UpdateAppointmentCountLabel()
@@ -130,6 +131,53 @@ namespace OralPlus
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void appointmentsTodayViewForm_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void UpdateTodaysAppointments()
+        {
+            string connectionString = "server=localhost;user=root;password=;database=oralplus;";
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                connection.Open();
+
+                string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+                string query = "SELECT patientId, patientLastName, appointmentReason FROM appointment WHERE appointmentDate = @currentDate";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@currentDate", currentDate);
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                appointmentsTodayViewForm.Columns.Clear();
+
+                appointmentsTodayViewForm.DataSource = dt;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
