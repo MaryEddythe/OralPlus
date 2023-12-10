@@ -255,6 +255,7 @@ namespace OralPlus
             // txt_contact
             // 
             this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_contact.Enabled = false;
             this.txt_contact.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_contact.Location = new System.Drawing.Point(423, 694);
             this.txt_contact.Multiline = true;
@@ -265,6 +266,7 @@ namespace OralPlus
             // txt_email
             // 
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_email.Enabled = false;
             this.txt_email.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_email.Location = new System.Drawing.Point(424, 607);
             this.txt_email.Multiline = true;
@@ -286,6 +288,7 @@ namespace OralPlus
             // txt_add
             // 
             this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_add.Enabled = false;
             this.txt_add.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_add.Location = new System.Drawing.Point(425, 519);
             this.txt_add.Multiline = true;
@@ -307,6 +310,7 @@ namespace OralPlus
             // radio_xx
             // 
             this.radio_xx.AutoSize = true;
+            this.radio_xx.Enabled = false;
             this.radio_xx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.radio_xx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.radio_xx.Location = new System.Drawing.Point(740, 443);
@@ -320,6 +324,7 @@ namespace OralPlus
             // radio_female
             // 
             this.radio_female.AutoSize = true;
+            this.radio_female.Enabled = false;
             this.radio_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.radio_female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.radio_female.Location = new System.Drawing.Point(585, 443);
@@ -333,6 +338,7 @@ namespace OralPlus
             // radio_male
             // 
             this.radio_male.AutoSize = true;
+            this.radio_male.Enabled = false;
             this.radio_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.radio_male.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.radio_male.Location = new System.Drawing.Point(425, 443);
@@ -380,6 +386,7 @@ namespace OralPlus
             // txt_fname
             // 
             this.txt_fname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_fname.Enabled = false;
             this.txt_fname.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_fname.Location = new System.Drawing.Point(668, 263);
             this.txt_fname.Multiline = true;
@@ -390,6 +397,7 @@ namespace OralPlus
             // txt_lname
             // 
             this.txt_lname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_lname.Enabled = false;
             this.txt_lname.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_lname.Location = new System.Drawing.Point(426, 263);
             this.txt_lname.Multiline = true;
@@ -499,6 +507,7 @@ namespace OralPlus
             // 
             // date_dob
             // 
+            this.date_dob.Enabled = false;
             this.date_dob.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.date_dob.Location = new System.Drawing.Point(426, 373);
             this.date_dob.Name = "date_dob";

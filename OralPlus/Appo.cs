@@ -182,6 +182,20 @@ namespace OralPlus
                     if (rowsInserted > 0)
                     {
                         MessageBox.Show("Appointment marked as done.");
+
+                        string deleteQuery = "DELETE FROM appointment WHERE appointmentId = @appointmentId";
+                        MySqlCommand deleteCmd = new MySqlCommand(deleteQuery, connection);
+                        deleteCmd.Parameters.AddWithValue("@appointmentId", appointmentId);
+
+                        int rowsDeleted = deleteCmd.ExecuteNonQuery();
+
+                        if (rowsDeleted > 0)
+                        {
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to remove appointment.");
+                        }
                         DisplayAppointments();
                     }
                     else
@@ -225,7 +239,7 @@ namespace OralPlus
 
                     if (rowsDeleted > 0)
                     {
-                        MessageBox.Show("Appointment cancelled. Entry deleted from appointment table.");
+                        MessageBox.Show("Appointment cancelled.");
                         DisplayAppointments();
                     }
                     else

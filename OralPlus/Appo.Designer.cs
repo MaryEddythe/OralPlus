@@ -131,9 +131,8 @@ namespace OralPlus
             this.label_patientId.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label_patientId.Location = new System.Drawing.Point(683, 327);
             this.label_patientId.Name = "label_patientId";
-            this.label_patientId.Size = new System.Drawing.Size(26, 25);
+            this.label_patientId.Size = new System.Drawing.Size(0, 25);
             this.label_patientId.TabIndex = 117;
-            this.label_patientId.Text = "ID";
             // 
             // label_appointmentId
             // 
@@ -142,9 +141,8 @@ namespace OralPlus
             this.label_appointmentId.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label_appointmentId.Location = new System.Drawing.Point(683, 407);
             this.label_appointmentId.Name = "label_appointmentId";
-            this.label_appointmentId.Size = new System.Drawing.Size(26, 25);
+            this.label_appointmentId.Size = new System.Drawing.Size(0, 25);
             this.label_appointmentId.TabIndex = 118;
-            this.label_appointmentId.Text = "ID";
             // 
             // Appo
             // 

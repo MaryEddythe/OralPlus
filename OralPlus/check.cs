@@ -149,5 +149,10 @@ namespace OralPlus
         {
 
         }
+
+        private void btn_check_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Patient checked-in.");
+        }
     }
 }
