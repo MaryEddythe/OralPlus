@@ -108,6 +108,7 @@ namespace OralPlus
             this.btn_cancel.TabIndex = 116;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click_1);
             // 
             // btn_done
             // 
@@ -121,6 +122,7 @@ namespace OralPlus
             this.btn_done.TabIndex = 115;
             this.btn_done.Text = "Done";
             this.btn_done.UseVisualStyleBackColor = false;
+            this.btn_done.Click += new System.EventHandler(this.btn_done_Click_1);
             // 
             // label_patientId
             // 

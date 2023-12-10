@@ -156,5 +156,96 @@ namespace OralPlus
         {
 
         }
+
+        private void btn_done_Click_1(object sender, EventArgs e)
+        {
+            string appointmentId = label_appointmentId.Text;
+            string patientId = label_patientId.Text;
+
+            if (!string.IsNullOrEmpty(appointmentId))
+            {
+                string connectionString = "server=localhost;user=root;password=;database=oralplus;";
+                MySqlConnection connection = new MySqlConnection(connectionString);
+
+                try
+                {
+                    connection.Open();
+
+                    string insertQuery = "INSERT INTO patientsToday (patientsTodayDate, patientId, appointmentId) " +
+                                         "VALUES (NOW(), @patientId, @appointmentId)";
+                    MySqlCommand insertCmd = new MySqlCommand(insertQuery, connection);
+                    insertCmd.Parameters.AddWithValue("@patientId", patientId);
+                    insertCmd.Parameters.AddWithValue("@appointmentId", appointmentId);
+
+                    int rowsInserted = insertCmd.ExecuteNonQuery();
+
+                    if (rowsInserted > 0)
+                    {
+                        MessageBox.Show("Appointment marked as done.");
+                        DisplayAppointments();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to mark as done.");
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select an appointment.");
+            }
+        }
+
+        private void btn_cancel_Click_1(object sender, EventArgs e)
+        {
+            string appointmentId = label_appointmentId.Text;
+
+            if (!string.IsNullOrEmpty(appointmentId))
+            {
+                string connectionString = "server=localhost;user=root;password=;database=oralplus;";
+                MySqlConnection connection = new MySqlConnection(connectionString);
+
+                try
+                {
+                    connection.Open();
+
+                    string deleteQuery = "DELETE FROM appointment WHERE appointmentId = @appointmentId";
+                    MySqlCommand deleteCmd = new MySqlCommand(deleteQuery, connection);
+                    deleteCmd.Parameters.AddWithValue("@appointmentId", appointmentId);
+
+                    int rowsDeleted = deleteCmd.ExecuteNonQuery();
+
+                    if (rowsDeleted > 0)
+                    {
+                        MessageBox.Show("Appointment cancelled. Entry deleted from appointment table.");
+                        DisplayAppointments();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to cancel the appointment.");
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select an appointment.");
+            }
+        }
     }
 }

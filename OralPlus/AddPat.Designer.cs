@@ -296,9 +296,9 @@ namespace OralPlus
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.label9.Location = new System.Drawing.Point(144, 112);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 18);
+            this.label9.Size = new System.Drawing.Size(79, 18);
             this.label9.TabIndex = 38;
-            this.label9.Text = "ID NUMBER";
+            this.label9.Text = "ID Number";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // txt_id

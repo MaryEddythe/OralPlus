@@ -213,5 +213,61 @@ namespace OralPlus
             txt_email.Text = string.Empty;
             txt_contact.Text = string.Empty;
         }
+
+        private void btn_update_Click_1(object sender, EventArgs e)
+        {
+            string connectionString = "server=localhost;user=root;password=;database=oralplus;";
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
+            try
+            {
+                connection.Open();
+
+                string query = "UPDATE patient SET patientFirstName = @patientFirstName, patientLastName = @patientLastName, " +
+                               "patientSex = @patientSex, patientDoB = @patientDoB, patientAddress = @patientAddress, " +
+                               "patientEmail = @patientEmail, patientContactNumber = @patientContactNumber " +
+                               "WHERE patientId = @patientId";
+
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                cmd.Parameters.AddWithValue("@patientFirstName", txt_lname.Text);
+                cmd.Parameters.AddWithValue("@patientLastName", txt_fname.Text);
+
+                string sex = "";
+                if (radio_male.Checked)
+                    sex = "M";
+                else if (radio_female.Checked)
+                    sex = "F";
+                else if (radio_xx.Checked)
+                    sex = "O";
+                cmd.Parameters.AddWithValue("@patientSex", sex);
+
+                cmd.Parameters.AddWithValue("@patientDoB", date_dob.Value.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@patientAddress", txt_add.Text);
+                cmd.Parameters.AddWithValue("@patientEmail", txt_email.Text);
+                cmd.Parameters.AddWithValue("@patientContactNumber", txt_contact.Text);
+                cmd.Parameters.AddWithValue("@patientId", txt_id.Text);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Patient record updated successfully!");
+                    DisplayPatients();
+                }
+                else
+                {
+                    MessageBox.Show("No records were updated.");
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
     }
 }

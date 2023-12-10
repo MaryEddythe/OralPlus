@@ -229,5 +229,10 @@ namespace OralPlus
         {
 
         }
+
+        private void btn_update_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
