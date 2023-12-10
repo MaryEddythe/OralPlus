@@ -60,7 +60,7 @@ namespace OralPlus
             // txt_search
             // 
             this.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_search.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            this.txt_search.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_search.Location = new System.Drawing.Point(612, 36);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
@@ -170,7 +170,7 @@ namespace OralPlus
             // txt_contact
             // 
             this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_contact.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            this.txt_contact.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_contact.Location = new System.Drawing.Point(1036, 619);
             this.txt_contact.Multiline = true;
             this.txt_contact.Name = "txt_contact";
@@ -180,7 +180,7 @@ namespace OralPlus
             // txt_email
             // 
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_email.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            this.txt_email.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_email.Location = new System.Drawing.Point(1037, 532);
             this.txt_email.Multiline = true;
             this.txt_email.Name = "txt_email";
@@ -201,7 +201,7 @@ namespace OralPlus
             // txt_add
             // 
             this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_add.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            this.txt_add.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_add.Location = new System.Drawing.Point(1038, 444);
             this.txt_add.Multiline = true;
             this.txt_add.Name = "txt_add";
@@ -273,7 +273,7 @@ namespace OralPlus
             // 
             this.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_id.Enabled = false;
-            this.txt_id.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            this.txt_id.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_id.Location = new System.Drawing.Point(1038, 115);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
@@ -305,7 +305,7 @@ namespace OralPlus
             // txt_fname
             // 
             this.txt_fname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_fname.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            this.txt_fname.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_fname.Location = new System.Drawing.Point(1281, 207);
             this.txt_fname.Multiline = true;
             this.txt_fname.Name = "txt_fname";
@@ -315,7 +315,7 @@ namespace OralPlus
             // txt_lname
             // 
             this.txt_lname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_lname.Font = new System.Drawing.Font("Poppins Medium", 9F);
+            this.txt_lname.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_lname.Location = new System.Drawing.Point(1038, 207);
             this.txt_lname.Multiline = true;
             this.txt_lname.Name = "txt_lname";

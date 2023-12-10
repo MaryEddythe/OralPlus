@@ -97,7 +97,7 @@ namespace OralPlus
             // 
             this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_contact.Enabled = false;
-            this.txt_contact.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_contact.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_contact.Location = new System.Drawing.Point(657, 607);
             this.txt_contact.Multiline = true;
             this.txt_contact.Name = "txt_contact";
@@ -108,7 +108,7 @@ namespace OralPlus
             // 
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_email.Enabled = false;
-            this.txt_email.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_email.Location = new System.Drawing.Point(657, 527);
             this.txt_email.Multiline = true;
             this.txt_email.Name = "txt_email";
@@ -119,7 +119,7 @@ namespace OralPlus
             // 
             this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_add.Enabled = false;
-            this.txt_add.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_add.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_add.Location = new System.Drawing.Point(657, 448);
             this.txt_add.Multiline = true;
             this.txt_add.Name = "txt_add";
@@ -174,11 +174,11 @@ namespace OralPlus
             // 
             this.radio_xx.AutoSize = true;
             this.radio_xx.Enabled = false;
-            this.radio_xx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_xx.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_xx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.radio_xx.Location = new System.Drawing.Point(898, 305);
             this.radio_xx.Name = "radio_xx";
-            this.radio_xx.Size = new System.Drawing.Size(134, 21);
+            this.radio_xx.Size = new System.Drawing.Size(147, 29);
             this.radio_xx.TabIndex = 21;
             this.radio_xx.TabStop = true;
             this.radio_xx.Text = "Prefer not to say";
@@ -188,11 +188,11 @@ namespace OralPlus
             // 
             this.radio_female.AutoSize = true;
             this.radio_female.Enabled = false;
-            this.radio_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_female.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.radio_female.Location = new System.Drawing.Point(778, 305);
             this.radio_female.Name = "radio_female";
-            this.radio_female.Size = new System.Drawing.Size(75, 21);
+            this.radio_female.Size = new System.Drawing.Size(84, 29);
             this.radio_female.TabIndex = 20;
             this.radio_female.TabStop = true;
             this.radio_female.Text = "Female";
@@ -202,11 +202,11 @@ namespace OralPlus
             // 
             this.radio_male.AutoSize = true;
             this.radio_male.Enabled = false;
-            this.radio_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_male.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_male.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.radio_male.Location = new System.Drawing.Point(657, 305);
             this.radio_male.Name = "radio_male";
-            this.radio_male.Size = new System.Drawing.Size(59, 21);
+            this.radio_male.Size = new System.Drawing.Size(66, 29);
             this.radio_male.TabIndex = 19;
             this.radio_male.TabStop = true;
             this.radio_male.Text = "Male";
@@ -215,17 +215,17 @@ namespace OralPlus
             // date_dob
             // 
             this.date_dob.Enabled = false;
-            this.date_dob.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.date_dob.Font = new System.Drawing.Font("Poppins", 7.8F);
             this.date_dob.Location = new System.Drawing.Point(657, 378);
             this.date_dob.Name = "date_dob";
-            this.date_dob.Size = new System.Drawing.Size(406, 30);
+            this.date_dob.Size = new System.Drawing.Size(406, 27);
             this.date_dob.TabIndex = 18;
             // 
             // txt_fname
             // 
             this.txt_fname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_fname.Enabled = false;
-            this.txt_fname.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.txt_fname.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_fname.Location = new System.Drawing.Point(874, 233);
             this.txt_fname.Multiline = true;
             this.txt_fname.Name = "txt_fname";
@@ -236,7 +236,7 @@ namespace OralPlus
             // 
             this.txt_lname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_lname.Enabled = false;
-            this.txt_lname.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.txt_lname.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_lname.Location = new System.Drawing.Point(657, 233);
             this.txt_lname.Multiline = true;
             this.txt_lname.Name = "txt_lname";
@@ -321,7 +321,7 @@ namespace OralPlus
             // 
             this.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_id.Enabled = false;
-            this.txt_id.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.txt_id.Font = new System.Drawing.Font("Poppins", 9F);
             this.txt_id.Location = new System.Drawing.Point(657, 158);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
