@@ -99,11 +99,6 @@ namespace OralPlus
             btn_Appointment.BackColor = Color.FromArgb(24, 30, 54);
         }
 
-        private void btn_Settings_Leave(object sender, EventArgs e)
-        {
-            btn_Settings.BackColor = Color.FromArgb(24, 30, 54);
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             pnl_nav.Height = btn_Check.Height;
