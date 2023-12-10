@@ -29,8 +29,8 @@ namespace OralPlus
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListPatients));
             this.txt_search = new System.Windows.Forms.TextBox();
             this.patientViewForm = new System.Windows.Forms.DataGridView();
@@ -60,7 +60,7 @@ namespace OralPlus
             // txt_search
             // 
             this.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_search.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_search.Location = new System.Drawing.Point(612, 36);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
@@ -73,25 +73,25 @@ namespace OralPlus
             this.patientViewForm.AllowUserToDeleteRows = false;
             this.patientViewForm.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.patientViewForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.patientViewForm.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.patientViewForm.DefaultCellStyle = dataGridViewCellStyle1;
             this.patientViewForm.Location = new System.Drawing.Point(22, 80);
             this.patientViewForm.Name = "patientViewForm";
             this.patientViewForm.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.patientViewForm.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.patientViewForm.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.patientViewForm.RowHeadersVisible = false;
             this.patientViewForm.RowHeadersWidth = 51;
             this.patientViewForm.RowTemplate.Height = 24;
@@ -101,7 +101,7 @@ namespace OralPlus
             // 
             // btn_delete
             // 
-            this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(178)))));
+            this.btn_delete.BackColor = System.Drawing.Color.Firebrick;
             this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delete.Font = new System.Drawing.Font("Poppins Medium", 7.8F);
             this.btn_delete.ForeColor = System.Drawing.SystemColors.Control;
@@ -169,21 +169,21 @@ namespace OralPlus
             // txt_contact
             // 
             this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_contact.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_contact.Location = new System.Drawing.Point(1036, 619);
             this.txt_contact.Multiline = true;
             this.txt_contact.Name = "txt_contact";
-            this.txt_contact.Size = new System.Drawing.Size(464, 47);
+            this.txt_contact.Size = new System.Drawing.Size(464, 36);
             this.txt_contact.TabIndex = 143;
             // 
             // txt_email
             // 
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_email.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_email.Location = new System.Drawing.Point(1037, 532);
             this.txt_email.Multiline = true;
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(466, 47);
+            this.txt_email.Size = new System.Drawing.Size(466, 37);
             this.txt_email.TabIndex = 142;
             // 
             // label3
@@ -200,11 +200,11 @@ namespace OralPlus
             // txt_add
             // 
             this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_add.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_add.Location = new System.Drawing.Point(1038, 444);
             this.txt_add.Multiline = true;
             this.txt_add.Name = "txt_add";
-            this.txt_add.Size = new System.Drawing.Size(466, 47);
+            this.txt_add.Size = new System.Drawing.Size(466, 39);
             this.txt_add.TabIndex = 140;
             // 
             // label4
@@ -272,11 +272,11 @@ namespace OralPlus
             // 
             this.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_id.Enabled = false;
-            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_id.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_id.Location = new System.Drawing.Point(1038, 115);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(462, 47);
+            this.txt_id.Size = new System.Drawing.Size(462, 34);
             this.txt_id.TabIndex = 134;
             // 
             // label6
@@ -304,21 +304,21 @@ namespace OralPlus
             // txt_fname
             // 
             this.txt_fname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_fname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_fname.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_fname.Location = new System.Drawing.Point(1281, 207);
             this.txt_fname.Multiline = true;
             this.txt_fname.Name = "txt_fname";
-            this.txt_fname.Size = new System.Drawing.Size(221, 47);
+            this.txt_fname.Size = new System.Drawing.Size(221, 35);
             this.txt_fname.TabIndex = 131;
             // 
             // txt_lname
             // 
             this.txt_lname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_lname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_lname.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_lname.Location = new System.Drawing.Point(1038, 207);
             this.txt_lname.Multiline = true;
             this.txt_lname.Name = "txt_lname";
-            this.txt_lname.Size = new System.Drawing.Size(221, 47);
+            this.txt_lname.Size = new System.Drawing.Size(221, 35);
             this.txt_lname.TabIndex = 130;
             // 
             // ListPatients

@@ -51,6 +51,8 @@ namespace OralPlus
             // 
             // txt_uname
             // 
+            this.txt_uname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_uname.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold);
             this.txt_uname.Location = new System.Drawing.Point(784, 293);
             this.txt_uname.Multiline = true;
             this.txt_uname.Name = "txt_uname";
@@ -60,6 +62,8 @@ namespace OralPlus
             // 
             // txt_pass
             // 
+            this.txt_pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_pass.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold);
             this.txt_pass.Location = new System.Drawing.Point(784, 381);
             this.txt_pass.Multiline = true;
             this.txt_pass.Name = "txt_pass";

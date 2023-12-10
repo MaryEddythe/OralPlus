@@ -255,7 +255,7 @@ namespace OralPlus
             // txt_contact
             // 
             this.txt_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_contact.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_contact.Location = new System.Drawing.Point(423, 694);
             this.txt_contact.Multiline = true;
             this.txt_contact.Name = "txt_contact";
@@ -265,7 +265,7 @@ namespace OralPlus
             // txt_email
             // 
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_email.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_email.Location = new System.Drawing.Point(424, 607);
             this.txt_email.Multiline = true;
             this.txt_email.Name = "txt_email";
@@ -286,7 +286,7 @@ namespace OralPlus
             // txt_add
             // 
             this.txt_add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_add.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_add.Location = new System.Drawing.Point(425, 519);
             this.txt_add.Multiline = true;
             this.txt_add.Name = "txt_add";
@@ -380,7 +380,7 @@ namespace OralPlus
             // txt_fname
             // 
             this.txt_fname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_fname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_fname.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_fname.Location = new System.Drawing.Point(668, 263);
             this.txt_fname.Multiline = true;
             this.txt_fname.Name = "txt_fname";
@@ -390,7 +390,7 @@ namespace OralPlus
             // txt_lname
             // 
             this.txt_lname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_lname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_lname.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_lname.Location = new System.Drawing.Point(426, 263);
             this.txt_lname.Multiline = true;
             this.txt_lname.Name = "txt_lname";
@@ -400,7 +400,7 @@ namespace OralPlus
             // txt_id
             // 
             this.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.txt_id.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_id.Location = new System.Drawing.Point(424, 173);
             this.txt_id.Multiline = true;
             this.txt_id.Name = "txt_id";
@@ -458,7 +458,7 @@ namespace OralPlus
             // txt_reason
             // 
             this.txt_reason.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_reason.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txt_reason.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.txt_reason.Location = new System.Drawing.Point(959, 549);
             this.txt_reason.Multiline = true;
             this.txt_reason.Name = "txt_reason";
@@ -499,10 +499,10 @@ namespace OralPlus
             // 
             // date_dob
             // 
-            this.date_dob.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.date_dob.Font = new System.Drawing.Font("Poppins Medium", 9F);
             this.date_dob.Location = new System.Drawing.Point(426, 373);
             this.date_dob.Name = "date_dob";
-            this.date_dob.Size = new System.Drawing.Size(463, 23);
+            this.date_dob.Size = new System.Drawing.Size(463, 30);
             this.date_dob.TabIndex = 91;
             // 
             // label22
