@@ -72,11 +72,8 @@ namespace OralPlus
 
         private void btn_Appointment_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Appointments f2 = new Appointments();
-            f2.ShowDialog();
-            f2 = null;
-            this.Show();
+            Appo uc = new Appo();
+            addUserControl(uc);
 
             pnl_nav.Height = btn_Appointment.Height;
             pnl_nav.Top = btn_Appointment.Top;

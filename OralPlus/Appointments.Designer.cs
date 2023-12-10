@@ -49,6 +49,7 @@ namespace OralPlus
             this.appointmentViewForm.RowTemplate.Height = 24;
             this.appointmentViewForm.Size = new System.Drawing.Size(599, 627);
             this.appointmentViewForm.TabIndex = 1;
+            this.appointmentViewForm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.appointmentViewForm_CellContentClick);
             // 
             // btn_done
             // 

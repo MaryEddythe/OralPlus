@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace OralPlus
 {
-    public partial class Appointments : Form
+    public partial class Appo : UserControl
     {
-        public Appointments()
+        public Appo()
         {
             InitializeComponent();
             DisplayAppointments();

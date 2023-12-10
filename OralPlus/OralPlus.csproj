@@ -142,6 +142,12 @@
     <Compile Include="AddPat.Designer.cs">
       <DependentUpon>AddPat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appo.Designer.cs">
+      <DependentUpon>Appo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Branch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddPat.resx">
       <DependentUpon>AddPat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appo.resx">
+      <DependentUpon>Appo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Branch.resx">
       <DependentUpon>Branch.cs</DependentUpon>
