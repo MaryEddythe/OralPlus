@@ -51,13 +51,15 @@ namespace OralPlus
             this.cboDevice = new System.Windows.Forms.ComboBox();
             this.btn_scan = new System.Windows.Forms.Button();
             this.btn_check = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label9 = new System.Windows.Forms.Label();
             this.txt_id = new System.Windows.Forms.TextBox();
             this.btn_exit = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label7
@@ -65,7 +67,7 @@ namespace OralPlus
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label7.Location = new System.Drawing.Point(657, 419);
+            this.label7.Location = new System.Drawing.Point(35, 337);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 26);
             this.label7.TabIndex = 31;
@@ -76,7 +78,7 @@ namespace OralPlus
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label5.Location = new System.Drawing.Point(652, 578);
+            this.label5.Location = new System.Drawing.Point(30, 496);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(141, 26);
             this.label5.TabIndex = 30;
@@ -87,7 +89,7 @@ namespace OralPlus
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label6.Location = new System.Drawing.Point(657, 498);
+            this.label6.Location = new System.Drawing.Point(35, 416);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 26);
             this.label6.TabIndex = 29;
@@ -131,7 +133,7 @@ namespace OralPlus
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label4.Location = new System.Drawing.Point(657, 346);
+            this.label4.Location = new System.Drawing.Point(35, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 26);
             this.label4.TabIndex = 25;
@@ -141,8 +143,8 @@ namespace OralPlus
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label3.Location = new System.Drawing.Point(869, 204);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(246, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 26);
             this.label3.TabIndex = 24;
@@ -153,7 +155,7 @@ namespace OralPlus
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label2.Location = new System.Drawing.Point(657, 204);
+            this.label2.Location = new System.Drawing.Point(34, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 26);
             this.label2.TabIndex = 23;
@@ -164,7 +166,7 @@ namespace OralPlus
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label1.Location = new System.Drawing.Point(657, 282);
+            this.label1.Location = new System.Drawing.Point(33, 197);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 26);
             this.label1.TabIndex = 22;
@@ -176,7 +178,7 @@ namespace OralPlus
             this.radio_xx.Enabled = false;
             this.radio_xx.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_xx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.radio_xx.Location = new System.Drawing.Point(898, 305);
+            this.radio_xx.Location = new System.Drawing.Point(281, 220);
             this.radio_xx.Name = "radio_xx";
             this.radio_xx.Size = new System.Drawing.Size(147, 29);
             this.radio_xx.TabIndex = 21;
@@ -190,7 +192,7 @@ namespace OralPlus
             this.radio_female.Enabled = false;
             this.radio_female.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.radio_female.Location = new System.Drawing.Point(778, 305);
+            this.radio_female.Location = new System.Drawing.Point(161, 220);
             this.radio_female.Name = "radio_female";
             this.radio_female.Size = new System.Drawing.Size(84, 29);
             this.radio_female.TabIndex = 20;
@@ -204,7 +206,7 @@ namespace OralPlus
             this.radio_male.Enabled = false;
             this.radio_male.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_male.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.radio_male.Location = new System.Drawing.Point(657, 305);
+            this.radio_male.Location = new System.Drawing.Point(40, 220);
             this.radio_male.Name = "radio_male";
             this.radio_male.Size = new System.Drawing.Size(66, 29);
             this.radio_male.TabIndex = 19;
@@ -289,19 +291,6 @@ namespace OralPlus
             this.btn_check.UseVisualStyleBackColor = false;
             this.btn_check.Click += new System.EventHandler(this.btn_check_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Poppins ExtraBold", 20F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label8.Location = new System.Drawing.Point(453, 54);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(324, 60);
-            this.label8.TabIndex = 36;
-            this.label8.Text = "Check-in Patient";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -311,7 +300,7 @@ namespace OralPlus
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            this.label9.Location = new System.Drawing.Point(657, 126);
+            this.label9.Location = new System.Drawing.Point(34, 44);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 26);
             this.label9.TabIndex = 38;
@@ -339,36 +328,57 @@ namespace OralPlus
             this.btn_exit.TabStop = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Snow;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.radio_xx);
+            this.panel1.Controls.Add(this.radio_male);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.radio_female);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(623, 85);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(476, 661);
+            this.panel1.TabIndex = 40;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Poppins ExtraBold", 25F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(221, 69);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(206, 74);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "SCAN ID";
+            // 
             // check
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1228, 840);
+            this.Controls.Add(this.cboDevice);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.txt_id);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_check);
             this.Controls.Add(this.btn_scan);
-            this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_contact);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.txt_add);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.radio_xx);
-            this.Controls.Add(this.radio_female);
-            this.Controls.Add(this.radio_male);
             this.Controls.Add(this.date_dob);
             this.Controls.Add(this.txt_fname);
             this.Controls.Add(this.txt_lname);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "check";
             this.Text = "check";
@@ -376,6 +386,8 @@ namespace OralPlus
             this.GiveFeedback += new System.Windows.Forms.GiveFeedbackEventHandler(this.check_Load_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,10 +415,11 @@ namespace OralPlus
         private System.Windows.Forms.ComboBox cboDevice;
         private System.Windows.Forms.Button btn_scan;
         private System.Windows.Forms.Button btn_check;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_id;
         private System.Windows.Forms.PictureBox btn_exit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
     }
 }

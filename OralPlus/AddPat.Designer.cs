@@ -58,6 +58,8 @@ namespace OralPlus
             this.btn_patient = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.QR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.panel2.SuspendLayout();
@@ -252,23 +254,23 @@ namespace OralPlus
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 11F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(820, 550);
+            this.label8.Location = new System.Drawing.Point(782, 590);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 18);
+            this.label8.Size = new System.Drawing.Size(153, 34);
             this.label8.TabIndex = 32;
             this.label8.Text = "DOWNLOAD IN";
             // 
             // btn_png
             // 
-            this.btn_png.BackColor = System.Drawing.Color.Transparent;
+            this.btn_png.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(156)))), ((int)(((byte)(211)))));
             this.btn_png.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_png.Font = new System.Drawing.Font("Poppins Medium", 7.8F);
             this.btn_png.ForeColor = System.Drawing.Color.White;
-            this.btn_png.Location = new System.Drawing.Point(698, 596);
+            this.btn_png.Location = new System.Drawing.Point(673, 640);
             this.btn_png.Name = "btn_png";
-            this.btn_png.Size = new System.Drawing.Size(160, 39);
+            this.btn_png.Size = new System.Drawing.Size(174, 39);
             this.btn_png.TabIndex = 33;
             this.btn_png.Text = "PNG";
             this.btn_png.UseVisualStyleBackColor = false;
@@ -276,13 +278,13 @@ namespace OralPlus
             // 
             // btn_jpg
             // 
-            this.btn_jpg.BackColor = System.Drawing.Color.Transparent;
+            this.btn_jpg.BackColor = System.Drawing.Color.CadetBlue;
             this.btn_jpg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_jpg.Font = new System.Drawing.Font("Poppins Medium", 7.8F);
             this.btn_jpg.ForeColor = System.Drawing.Color.White;
-            this.btn_jpg.Location = new System.Drawing.Point(887, 596);
+            this.btn_jpg.Location = new System.Drawing.Point(877, 640);
             this.btn_jpg.Name = "btn_jpg";
-            this.btn_jpg.Size = new System.Drawing.Size(161, 39);
+            this.btn_jpg.Size = new System.Drawing.Size(171, 39);
             this.btn_jpg.TabIndex = 34;
             this.btn_jpg.Text = "JPG";
             this.btn_jpg.UseVisualStyleBackColor = false;
@@ -292,9 +294,9 @@ namespace OralPlus
             // 
             this.QR.BackColor = System.Drawing.Color.Snow;
             this.QR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.QR.Location = new System.Drawing.Point(698, 160);
+            this.QR.Location = new System.Drawing.Point(673, 185);
             this.QR.Name = "QR";
-            this.QR.Size = new System.Drawing.Size(350, 350);
+            this.QR.Size = new System.Drawing.Size(375, 375);
             this.QR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QR.TabIndex = 36;
             this.QR.TabStop = false;
@@ -346,7 +348,7 @@ namespace OralPlus
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Poppins ExtraBold", 25F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(718, 37);
+            this.label10.Location = new System.Drawing.Point(686, 40);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(311, 74);
             this.label10.TabIndex = 40;
@@ -388,13 +390,35 @@ namespace OralPlus
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poppins Medium", 8F);
-            this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(633, 98);
+            this.label11.Font = new System.Drawing.Font("Poppins Medium", 7.5F);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label11.Location = new System.Drawing.Point(697, 102);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(469, 25);
+            this.label11.Size = new System.Drawing.Size(304, 23);
             this.label11.TabIndex = 44;
-            this.label11.Text = "Stay updated with your dental appointments! Receive timely text";
+            this.label11.Text = "Welcome! Join our dental family at OralPlus+!";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Poppins Medium", 7.5F);
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label13.Location = new System.Drawing.Point(644, 122);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(397, 23);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "When adding a new patient, our system generates a unique";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Poppins Medium", 7.5F);
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label14.Location = new System.Drawing.Point(680, 144);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(346, 23);
+            this.label14.TabIndex = 47;
+            this.label14.Text = "barcode for easy identification and record-keeping.";
             // 
             // AddPat
             // 
@@ -402,6 +426,8 @@ namespace OralPlus
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1210, 793);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btn_patient);
             this.Controls.Add(this.label10);
@@ -461,5 +487,7 @@ namespace OralPlus
         private System.Windows.Forms.Button btn_patient;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
