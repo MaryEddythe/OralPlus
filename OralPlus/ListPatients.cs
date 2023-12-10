@@ -11,16 +11,21 @@ using MySql.Data.MySqlClient;
 
 namespace OralPlus
 {
-    public partial class PatientList : UserControl
+    public partial class ListPatients : Form
     {
-       
-
-        public PatientList()
+        public ListPatients()
         {
             InitializeComponent();
+            DisplayPatients();
+
             txt_search.TextChanged += txt_search_TextChanged;
             patientViewForm.CellClick += patientViewForm_CellClick;
             btn_delete.Click += btn_delete_Click;
+        }
+
+        private void patientViewForm_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void DisplayPatients()
@@ -51,9 +56,6 @@ namespace OralPlus
                 connection.Close();
             }
         }
-
-
-
         private void PatientViewForm_Load(object sender, EventArgs e)
         {
             SearchPatients(string.Empty);
@@ -72,6 +74,10 @@ namespace OralPlus
                     dt.DefaultView.RowFilter = string.Empty;
                 }
             }
+        }
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            SearchPatients(txt_search.Text);
         }
 
         private void patientViewForm_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -206,28 +212,6 @@ namespace OralPlus
             txt_add.Text = string.Empty;
             txt_email.Text = string.Empty;
             txt_contact.Text = string.Empty;
-        }
-        private void txt_search_TextChanged(object sender, EventArgs e)
-        {
-            SearchPatients(txt_search.Text);
-        }
-
-        private void PatientList_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-       
-
-
-        private void patientViewForm_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

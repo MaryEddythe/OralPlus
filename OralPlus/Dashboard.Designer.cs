@@ -32,12 +32,11 @@ namespace OralPlus
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Dashboard = new System.Windows.Forms.Button();
             this.btn_Patient = new System.Windows.Forms.Button();
             this.btn_Appointment = new System.Windows.Forms.Button();
-            this.btn_Settings = new System.Windows.Forms.Button();
             this.pnl_nav = new System.Windows.Forms.Panel();
             this.btn_Check = new System.Windows.Forms.Button();
             this.btn_message = new System.Windows.Forms.Button();
@@ -65,6 +64,17 @@ namespace OralPlus
             this.panel2.Size = new System.Drawing.Size(296, 221);
             this.panel2.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(100, 166);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 36);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "OralPlus";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -76,17 +86,6 @@ namespace OralPlus
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(100, 166);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 36);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "OralPlus";
             // 
             // btn_Dashboard
             // 
@@ -143,24 +142,6 @@ namespace OralPlus
             this.btn_Appointment.Click += new System.EventHandler(this.btn_Appointment_Click);
             this.btn_Appointment.Leave += new System.EventHandler(this.btn_Appointment_Leave);
             // 
-            // btn_Settings
-            // 
-            this.btn_Settings.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Settings.FlatAppearance.BorderSize = 0;
-            this.btn_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Settings.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Settings.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_Settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_Settings.Image")));
-            this.btn_Settings.Location = new System.Drawing.Point(12, 570);
-            this.btn_Settings.Name = "btn_Settings";
-            this.btn_Settings.Size = new System.Drawing.Size(284, 44);
-            this.btn_Settings.TabIndex = 4;
-            this.btn_Settings.Text = "Settings";
-            this.btn_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_Settings.UseVisualStyleBackColor = false;
-            this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
-            this.btn_Settings.Leave += new System.EventHandler(this.btn_Settings_Leave);
-            // 
             // pnl_nav
             // 
             this.pnl_nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(136)))), ((int)(((byte)(49)))));
@@ -209,7 +190,6 @@ namespace OralPlus
             this.panel1.Controls.Add(this.btn_message);
             this.panel1.Controls.Add(this.btn_Check);
             this.panel1.Controls.Add(this.pnl_nav);
-            this.panel1.Controls.Add(this.btn_Settings);
             this.panel1.Controls.Add(this.btn_Appointment);
             this.panel1.Controls.Add(this.btn_Patient);
             this.panel1.Controls.Add(this.btn_Dashboard);
@@ -248,7 +228,6 @@ namespace OralPlus
         private System.Windows.Forms.Button btn_Dashboard;
         private System.Windows.Forms.Button btn_Patient;
         private System.Windows.Forms.Button btn_Appointment;
-        private System.Windows.Forms.Button btn_Settings;
         private System.Windows.Forms.Panel pnl_nav;
         private System.Windows.Forms.Button btn_Check;
         private System.Windows.Forms.Button btn_message;

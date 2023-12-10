@@ -169,6 +169,12 @@
     <Compile Include="Appointments.Designer.cs">
       <DependentUpon>Appointments.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListPatients.Designer.cs">
+      <DependentUpon>ListPatients.cs</DependentUpon>
+    </Compile>
     <Compile Include="PatientList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListPatients.resx">
+      <DependentUpon>ListPatients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

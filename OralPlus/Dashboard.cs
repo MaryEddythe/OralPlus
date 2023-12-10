@@ -58,7 +58,7 @@ namespace OralPlus
         private void btn_Patient_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Patients f2 = new Patients();
+            ListPatients f2 = new ListPatients();
             f2.ShowDialog();
             f2 = null;
             this.Show();
@@ -82,17 +82,6 @@ namespace OralPlus
             pnl_nav.Top = btn_Appointment.Top;
             pnl_nav.Left = btn_Appointment.Left;
             btn_Appointment.BackColor = Color.FromArgb(46, 51, 73);
-        }
-
-        private void btn_Settings_Click(object sender, EventArgs e)
-        {
-            PatientList uc = new PatientList ();
-            addUserControl(uc);
-
-            pnl_nav.Height = btn_Settings.Height;
-            pnl_nav.Top = btn_Settings.Top;
-            pnl_nav.Left = btn_Settings.Left;
-            btn_Settings.BackColor = Color.FromArgb(46, 51, 73);
         }
 
         private void btn_Dashboard_Leave(object sender, EventArgs e)
