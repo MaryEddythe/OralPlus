@@ -123,6 +123,7 @@ namespace OralPlus
             this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Splash";
             this.Text = "Splash";
             this.Load += new System.EventHandler(this.Splash_Load);

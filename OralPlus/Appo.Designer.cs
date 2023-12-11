@@ -29,6 +29,8 @@ namespace OralPlus
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.appointmentViewForm = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,12 +55,33 @@ namespace OralPlus
             // 
             // appointmentViewForm
             // 
+            this.appointmentViewForm.AllowUserToAddRows = false;
+            this.appointmentViewForm.AllowUserToDeleteRows = false;
             this.appointmentViewForm.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Poppins SemiBold", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.appointmentViewForm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.appointmentViewForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.appointmentViewForm.DefaultCellStyle = dataGridViewCellStyle2;
             this.appointmentViewForm.Location = new System.Drawing.Point(14, 16);
             this.appointmentViewForm.Name = "appointmentViewForm";
+            this.appointmentViewForm.ReadOnly = true;
+            this.appointmentViewForm.RowHeadersVisible = false;
             this.appointmentViewForm.RowHeadersWidth = 51;
             this.appointmentViewForm.RowTemplate.Height = 24;
+            this.appointmentViewForm.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.appointmentViewForm.Size = new System.Drawing.Size(599, 766);
             this.appointmentViewForm.TabIndex = 2;
             // 
@@ -68,7 +91,7 @@ namespace OralPlus
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Poppins ExtraBold", 25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(671, 177);
+            this.label3.Location = new System.Drawing.Point(662, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(519, 74);
             this.label3.TabIndex = 36;
@@ -79,7 +102,7 @@ namespace OralPlus
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(681, 365);
+            this.label1.Location = new System.Drawing.Point(672, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 26);
             this.label1.TabIndex = 114;
@@ -90,7 +113,7 @@ namespace OralPlus
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins SemiBold", 9F);
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(681, 287);
+            this.label8.Location = new System.Drawing.Point(672, 155);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 26);
             this.label8.TabIndex = 113;
@@ -127,21 +150,21 @@ namespace OralPlus
             // label_patientId
             // 
             this.label_patientId.AutoSize = true;
-            this.label_patientId.Font = new System.Drawing.Font("Poppins Medium", 8F);
+            this.label_patientId.Font = new System.Drawing.Font("Poppins Medium", 10F);
             this.label_patientId.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_patientId.Location = new System.Drawing.Point(683, 327);
+            this.label_patientId.Location = new System.Drawing.Point(674, 195);
             this.label_patientId.Name = "label_patientId";
-            this.label_patientId.Size = new System.Drawing.Size(0, 25);
+            this.label_patientId.Size = new System.Drawing.Size(0, 30);
             this.label_patientId.TabIndex = 117;
             // 
             // label_appointmentId
             // 
             this.label_appointmentId.AutoSize = true;
-            this.label_appointmentId.Font = new System.Drawing.Font("Poppins Medium", 8F);
+            this.label_appointmentId.Font = new System.Drawing.Font("Poppins Medium", 10F);
             this.label_appointmentId.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_appointmentId.Location = new System.Drawing.Point(683, 407);
+            this.label_appointmentId.Location = new System.Drawing.Point(674, 275);
             this.label_appointmentId.Name = "label_appointmentId";
-            this.label_appointmentId.Size = new System.Drawing.Size(0, 25);
+            this.label_appointmentId.Size = new System.Drawing.Size(0, 30);
             this.label_appointmentId.TabIndex = 118;
             // 
             // Appo

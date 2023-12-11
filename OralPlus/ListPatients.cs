@@ -269,5 +269,10 @@ namespace OralPlus
                 connection.Close();
             }
         }
+
+        private void patientViewForm_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

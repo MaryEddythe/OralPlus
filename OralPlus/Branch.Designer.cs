@@ -85,6 +85,7 @@ namespace OralPlus
             this.Controls.Add(this.btn_ilo);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Branch";
             this.Text = "Branch";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

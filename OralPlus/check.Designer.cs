@@ -380,6 +380,7 @@ namespace OralPlus
             this.Controls.Add(this.txt_lname);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "check";
             this.Text = "check";
             this.Load += new System.EventHandler(this.check_Load);

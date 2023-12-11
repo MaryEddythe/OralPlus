@@ -186,6 +186,7 @@ namespace OralPlus
             this.txt_pass.Location = new System.Drawing.Point(53, 380);
             this.txt_pass.Multiline = true;
             this.txt_pass.Name = "txt_pass";
+            this.txt_pass.PasswordChar = '*';
             this.txt_pass.Size = new System.Drawing.Size(356, 39);
             this.txt_pass.TabIndex = 18;
             // 

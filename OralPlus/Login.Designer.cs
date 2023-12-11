@@ -67,6 +67,7 @@ namespace OralPlus
             this.txt_pass.Location = new System.Drawing.Point(784, 381);
             this.txt_pass.Multiline = true;
             this.txt_pass.Name = "txt_pass";
+            this.txt_pass.PasswordChar = '*';
             this.txt_pass.Size = new System.Drawing.Size(356, 39);
             this.txt_pass.TabIndex = 1;
             this.txt_pass.TextChanged += new System.EventHandler(this.txt_pass_TextChanged);
@@ -224,6 +225,7 @@ namespace OralPlus
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
